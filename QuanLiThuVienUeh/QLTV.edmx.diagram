@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d2db6c47e684a4cba169e19af65788d" Name="Diagram1">
+        <EntityTypeShape EntityType="QLTVModel.CauHoi" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.DangKyCaLam" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.DanhGiaSach" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QLTVModel.DiemVaThuong" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.MineSweeper" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="QLTVModel.MoreBookReward" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.MuonTraSach" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="QLTVModel.NhanVien" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="QLTVModel.PhieuMuonSach" Width="1.5" PointX="4.75" PointY="7.75" />
+        <EntityTypeShape EntityType="QLTVModel.QuanLiCaLam" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="QLTVModel.Quiz" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.Sach" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QLTVModel.TaiKhoanNguoiDung" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="QLTVModel.TaiKhoanNhanVien" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QLTVModel.Tetris" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QLTVModel.ThongBao" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="QLTVModel.TuiDo" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="QLTVModel.MoreWeekReward" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QLTVModel.NguoiDung" Width="1.5" PointX="0.75" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

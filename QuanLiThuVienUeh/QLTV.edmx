@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QLTVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="MaCauHoi" />
+          </Key>
+          <Property Name="MaCauHoi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CauHoi" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CauTraLoi1" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CauTraLoi2" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CauTraLoi3" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CauTraLoi4" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HinhAnh" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DapAn" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DangKyCaLam">
+          <Key>
+            <PropertyRef Name="MaDangKyCaLam" />
+          </Key>
+          <Property Name="MaDangKyCaLam" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NgayDangKy" Type="date" />
+          <Property Name="NgayDuocDangKy" Type="date" />
+          <Property Name="STTCaYeuCau" Type="int" />
+          <Property Name="IDNhanVien" Type="int" />
+        </EntityType>
+        <EntityType Name="DanhGiaSach">
+          <Key>
+            <PropertyRef Name="MaDanhGia" />
+          </Key>
+          <Property Name="MaDanhGia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="IDSach" Type="int" />
+          <Property Name="DiemDanhGia" Type="int" />
+          <Property Name="NhanXet" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="DiemVaThuong">
+          <Key>
+            <PropertyRef Name="MaDiemVaThuong" />
+          </Key>
+          <Property Name="MaDiemVaThuong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="Diem" Type="int" />
+          <Property Name="Ngay" Type="date" />
+          <Property Name="GameTetris" Type="int" />
+          <Property Name="GameQuiz" Type="int" />
+          <Property Name="GameMineSweeper" Type="int" />
+        </EntityType>
+        <EntityType Name="MineSweeper">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="int" Nullable="false" />
+          <Property Name="Ngay" Type="date" />
+          <Property Name="DiemMineSweeper" Type="int" />
+          <Property Name="Limit" Type="bit" />
+        </EntityType>
+        <EntityType Name="MoreBookReward">
+          <Key>
+            <PropertyRef Name="MaPhanThuong" />
+          </Key>
+          <Property Name="MaPhanThuong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiemCanDeDoi" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QLTV.dbo.MoreWeekReward' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="MoreWeekReward">
+          <Key>
+            <PropertyRef Name="MaPhanThuong" />
+          </Key>
+          <Property Name="MaPhanThuong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiemCanDeDoi" Type="int" />
+        </EntityType>
+        <EntityType Name="MuonTraSach">
+          <Key>
+            <PropertyRef Name="IDMuonTra" />
+          </Key>
+          <Property Name="IDMuonTra" Type="int" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDSach" Type="int" />
+          <Property Name="TenSach" Type="nvarchar" MaxLength="500" />
+          <Property Name="NgayMuon" Type="datetime" />
+          <Property Name="NgayTraDuKien" Type="datetime" />
+          <Property Name="NgayTraThucTe" Type="datetime" />
+          <Property Name="SoTienPhat" Type="int" />
+          <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NguoiDung">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="int" Nullable="false" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="100" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
+          <Property Name="Lop" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChuyenNganh" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgaySinh" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoDienThoai" Type="nvarchar" MaxLength="20" />
+          <Property Name="GioiThieu" Type="nvarchar" MaxLength="1000" />
+          <Property Name="LichSuMuon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Avatar" Type="image" />
+        </EntityType>
+        <EntityType Name="NhanVien">
+          <Key>
+            <PropertyRef Name="IDNhanVien" />
+          </Key>
+          <Property Name="IDNhanVien" Type="int" Nullable="false" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="5" />
+          <Property Name="ChucVu" Type="nvarchar" MaxLength="10" />
+          <Property Name="NgaySinh" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoDienThoai" Type="varchar" MaxLength="15" />
+          <Property Name="GioiThieu" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NgayNhanViec" Type="datetime" />
+          <Property Name="Avatar" Type="image" />
+        </EntityType>
+        <EntityType Name="PhieuMuonSach">
+          <Key>
+            <PropertyRef Name="IDPhieuMuonSach" />
+          </Key>
+          <Property Name="IDPhieuMuonSach" Type="int" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDSach" Type="int" />
+          <Property Name="TenSach" Type="nvarchar" MaxLength="500" />
+          <Property Name="Coupon" Type="bit" />
+        </EntityType>
+        <EntityType Name="QuanLiCaLam">
+          <Key>
+            <PropertyRef Name="IDCa" />
+          </Key>
+          <Property Name="IDCa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDNhanVien" Type="int" />
+          <Property Name="STTCa" Type="int" />
+          <Property Name="Ngay" Type="date" />
+          <Property Name="GioKetThuc" Type="time" Precision="7" />
+          <Property Name="GioBatDau" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Quiz">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="int" Nullable="false" />
+          <Property Name="Ngay" Type="date" />
+          <Property Name="DiemQuiz" Type="int" />
+          <Property Name="Limit" Type="bit" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="IDSach" />
+          </Key>
+          <Property Name="IDSach" Type="int" Nullable="false" />
+          <Property Name="NgonNgu" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhienBan" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenSach" Type="nvarchar" MaxLength="500" />
+          <Property Name="TacGia" Type="nvarchar" MaxLength="100" />
+          <Property Name="TheLoai" Type="nvarchar" MaxLength="100" />
+          <Property Name="ChuyenNganh" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SoLuong" Type="int" />
+          <Property Name="NhaXuatBan" Type="nvarchar" MaxLength="50" />
+          <Property Name="NamXuatBan" Type="datetime" />
+          <Property Name="GioiThieu" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Avatar" Type="image" />
+        </EntityType>
+        <EntityType Name="TaiKhoanNguoiDung">
+          <Key>
+            <PropertyRef Name="IDTaiKhoanNguoiDung" />
+          </Key>
+          <Property Name="IDTaiKhoanNguoiDung" Type="int" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="MatKhau" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TaiKhoanNhanVien">
+          <Key>
+            <PropertyRef Name="IDTaiKhoanNhanVien" />
+          </Key>
+          <Property Name="IDTaiKhoanNhanVien" Type="int" Nullable="false" />
+          <Property Name="IDNhanVien" Type="int" />
+          <Property Name="ChucVu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="MatKhau" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Tetris">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="int" Nullable="false" />
+          <Property Name="Ngay" Type="date" />
+          <Property Name="DiemTetris" Type="int" />
+          <Property Name="Limit" Type="bit" />
+        </EntityType>
+        <EntityType Name="ThongBao">
+          <Key>
+            <PropertyRef Name="IDThongBao" />
+          </Key>
+          <Property Name="IDThongBao" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TieuDe" Type="nvarchar" MaxLength="1000" />
+          <Property Name="IDNguoiGui" Type="int" />
+          <Property Name="NguoiGui" Type="nvarchar" MaxLength="20" />
+          <Property Name="IDNguoiNhan" Type="int" />
+          <Property Name="EmailNguoiNhan" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChucVuNguoiNhan" Type="nvarchar" MaxLength="20" />
+          <Property Name="NoiDung" Type="nvarchar(max)" />
+          <Property Name="NgayGui" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TuiDo">
+          <Key>
+            <PropertyRef Name="MaTuiDo" />
+          </Key>
+          <Property Name="MaTuiDo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="int" />
+          <Property Name="CountWeekReward" Type="int" />
+          <Property Name="CountBookReward" Type="int" />
+        </EntityType>
+        <EntityContainer Name="QLTVModelStoreContainer">
+          <EntitySet Name="CauHoi" EntityType="Self.CauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DangKyCaLam" EntityType="Self.DangKyCaLam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DanhGiaSach" EntityType="Self.DanhGiaSach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DiemVaThuong" EntityType="Self.DiemVaThuong" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MineSweeper" EntityType="Self.MineSweeper" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MoreBookReward" EntityType="Self.MoreBookReward" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MuonTraSach" EntityType="Self.MuonTraSach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PhieuMuonSach" EntityType="Self.PhieuMuonSach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuanLiCaLam" EntityType="Self.QuanLiCaLam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Quiz" EntityType="Self.Quiz" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaiKhoanNguoiDung" EntityType="Self.TaiKhoanNguoiDung" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaiKhoanNhanVien" EntityType="Self.TaiKhoanNhanVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tetris" EntityType="Self.Tetris" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ThongBao" EntityType="Self.ThongBao" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TuiDo" EntityType="Self.TuiDo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MoreWeekReward" EntityType="Self.MoreWeekReward" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MoreWeekReward].[MaPhanThuong] AS [MaPhanThuong], 
+    [MoreWeekReward].[DiemCanDeDoi] AS [DiemCanDeDoi]
+    FROM [dbo].[MoreWeekReward] AS [MoreWeekReward]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLTVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="QLTVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CauHoi" EntityType="QLTVModel.CauHoi" />
+          <EntitySet Name="DangKyCaLam" EntityType="QLTVModel.DangKyCaLam" />
+          <EntitySet Name="DanhGiaSach" EntityType="QLTVModel.DanhGiaSach" />
+          <EntitySet Name="DiemVaThuong" EntityType="QLTVModel.DiemVaThuong" />
+          <EntitySet Name="MineSweeper" EntityType="QLTVModel.MineSweeper" />
+          <EntitySet Name="MoreBookReward" EntityType="QLTVModel.MoreBookReward" />
+          <EntitySet Name="MuonTraSach" EntityType="QLTVModel.MuonTraSach" />
+          <EntitySet Name="NhanVien" EntityType="QLTVModel.NhanVien" />
+          <EntitySet Name="PhieuMuonSach" EntityType="QLTVModel.PhieuMuonSach" />
+          <EntitySet Name="QuanLiCaLam" EntityType="QLTVModel.QuanLiCaLam" />
+          <EntitySet Name="Quiz" EntityType="QLTVModel.Quiz" />
+          <EntitySet Name="Sach" EntityType="QLTVModel.Sach" />
+          <EntitySet Name="TaiKhoanNguoiDung" EntityType="QLTVModel.TaiKhoanNguoiDung" />
+          <EntitySet Name="TaiKhoanNhanVien" EntityType="QLTVModel.TaiKhoanNhanVien" />
+          <EntitySet Name="Tetris" EntityType="QLTVModel.Tetris" />
+          <EntitySet Name="ThongBao" EntityType="QLTVModel.ThongBao" />
+          <EntitySet Name="TuiDo" EntityType="QLTVModel.TuiDo" />
+          <EntitySet Name="MoreWeekReward" EntityType="QLTVModel.MoreWeekReward" />
+          <EntitySet Name="NguoiDung" EntityType="QLTVModel.NguoiDung" />
+        </EntityContainer>
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="MaCauHoi" />
+          </Key>
+          <Property Name="MaCauHoi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CauHoi1" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CauTraLoi1" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CauTraLoi2" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CauTraLoi3" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CauTraLoi4" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HinhAnh" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DapAn" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DangKyCaLam">
+          <Key>
+            <PropertyRef Name="MaDangKyCaLam" />
+          </Key>
+          <Property Name="MaDangKyCaLam" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NgayDangKy" Type="DateTime" Precision="0" />
+          <Property Name="NgayDuocDangKy" Type="DateTime" Precision="0" />
+          <Property Name="STTCaYeuCau" Type="Int32" />
+          <Property Name="IDNhanVien" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DanhGiaSach">
+          <Key>
+            <PropertyRef Name="MaDanhGia" />
+          </Key>
+          <Property Name="MaDanhGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="IDSach" Type="Int32" />
+          <Property Name="DiemDanhGia" Type="Int32" />
+          <Property Name="NhanXet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DiemVaThuong">
+          <Key>
+            <PropertyRef Name="MaDiemVaThuong" />
+          </Key>
+          <Property Name="MaDiemVaThuong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="Diem" Type="Int32" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="GameTetris" Type="Int32" />
+          <Property Name="GameQuiz" Type="Int32" />
+          <Property Name="GameMineSweeper" Type="Int32" />
+        </EntityType>
+        <EntityType Name="MineSweeper">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="Int32" Nullable="false" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="DiemMineSweeper" Type="Int32" />
+          <Property Name="Limit" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="MoreBookReward">
+          <Key>
+            <PropertyRef Name="MaPhanThuong" />
+          </Key>
+          <Property Name="MaPhanThuong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiemCanDeDoi" Type="Int32" />
+        </EntityType>
+        <EntityType Name="MuonTraSach">
+          <Key>
+            <PropertyRef Name="IDMuonTra" />
+          </Key>
+          <Property Name="IDMuonTra" Type="Int32" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSach" Type="Int32" />
+          <Property Name="TenSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="NgayMuon" Type="DateTime" Precision="3" />
+          <Property Name="NgayTraDuKien" Type="DateTime" Precision="3" />
+          <Property Name="NgayTraThucTe" Type="DateTime" Precision="3" />
+          <Property Name="SoTienPhat" Type="Int32" />
+          <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NhanVien">
+          <Key>
+            <PropertyRef Name="IDNhanVien" />
+          </Key>
+          <Property Name="IDNhanVien" Type="Int32" Nullable="false" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="ChucVu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GioiThieu" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NgayNhanViec" Type="DateTime" Precision="3" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PhieuMuonSach">
+          <Key>
+            <PropertyRef Name="IDPhieuMuonSach" />
+          </Key>
+          <Property Name="IDPhieuMuonSach" Type="Int32" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDSach" Type="Int32" />
+          <Property Name="TenSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Coupon" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="QuanLiCaLam">
+          <Key>
+            <PropertyRef Name="IDCa" />
+          </Key>
+          <Property Name="IDCa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDNhanVien" Type="Int32" />
+          <Property Name="STTCa" Type="Int32" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="GioKetThuc" Type="Time" Precision="7" />
+          <Property Name="GioBatDau" Type="Time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Quiz">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="Int32" Nullable="false" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="DiemQuiz" Type="Int32" />
+          <Property Name="Limit" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="IDSach" />
+          </Key>
+          <Property Name="IDSach" Type="Int32" Nullable="false" />
+          <Property Name="NgonNgu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhienBan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TenSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="TacGia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TheLoai" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ChuyenNganh" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="NhaXuatBan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NamXuatBan" Type="DateTime" Precision="3" />
+          <Property Name="GioiThieu" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TaiKhoanNguoiDung">
+          <Key>
+            <PropertyRef Name="IDTaiKhoanNguoiDung" />
+          </Key>
+          <Property Name="IDTaiKhoanNguoiDung" Type="Int32" Nullable="false" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TaiKhoanNhanVien">
+          <Key>
+            <PropertyRef Name="IDTaiKhoanNhanVien" />
+          </Key>
+          <Property Name="IDTaiKhoanNhanVien" Type="Int32" Nullable="false" />
+          <Property Name="IDNhanVien" Type="Int32" />
+          <Property Name="ChucVu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Tetris">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="Int32" Nullable="false" />
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="DiemTetris" Type="Int32" />
+          <Property Name="Limit" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ThongBao">
+          <Key>
+            <PropertyRef Name="IDThongBao" />
+          </Key>
+          <Property Name="IDThongBao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TieuDe" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="IDNguoiGui" Type="Int32" />
+          <Property Name="NguoiGui" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IDNguoiNhan" Type="Int32" />
+          <Property Name="EmailNguoiNhan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChucVuNguoiNhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NgayGui" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="TuiDo">
+          <Key>
+            <PropertyRef Name="MaTuiDo" />
+          </Key>
+          <Property Name="MaTuiDo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDNguoiDung" Type="Int32" />
+          <Property Name="CountWeekReward" Type="Int32" />
+          <Property Name="CountBookReward" Type="Int32" />
+        </EntityType>
+        <EntityType Name="MoreWeekReward">
+          <Key>
+            <PropertyRef Name="MaPhanThuong" />
+          </Key>
+          <Property Name="MaPhanThuong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiemCanDeDoi" Type="Int32" />
+        </EntityType>
+        <EntityType Name="NguoiDung">
+          <Key>
+            <PropertyRef Name="IDNguoiDung" />
+          </Key>
+          <Property Name="IDNguoiDung" Type="Int32" Nullable="false" />
+          <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Lop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChuyenNganh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="GioiThieu" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="LichSuMuon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLTVModelStoreContainer" CdmEntityContainer="QLTVEntities">
+          <EntitySetMapping Name="CauHoi">
+            <EntityTypeMapping TypeName="QLTVModel.CauHoi">
+              <MappingFragment StoreEntitySet="CauHoi">
+                <ScalarProperty Name="DapAn" ColumnName="DapAn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="CauTraLoi4" ColumnName="CauTraLoi4" />
+                <ScalarProperty Name="CauTraLoi3" ColumnName="CauTraLoi3" />
+                <ScalarProperty Name="CauTraLoi2" ColumnName="CauTraLoi2" />
+                <ScalarProperty Name="CauTraLoi1" ColumnName="CauTraLoi1" />
+                <ScalarProperty Name="CauHoi1" ColumnName="CauHoi" />
+                <ScalarProperty Name="MaCauHoi" ColumnName="MaCauHoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DangKyCaLam">
+            <EntityTypeMapping TypeName="QLTVModel.DangKyCaLam">
+              <MappingFragment StoreEntitySet="DangKyCaLam">
+                <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
+                <ScalarProperty Name="STTCaYeuCau" ColumnName="STTCaYeuCau" />
+                <ScalarProperty Name="NgayDuocDangKy" ColumnName="NgayDuocDangKy" />
+                <ScalarProperty Name="NgayDangKy" ColumnName="NgayDangKy" />
+                <ScalarProperty Name="MaDangKyCaLam" ColumnName="MaDangKyCaLam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DanhGiaSach">
+            <EntityTypeMapping TypeName="QLTVModel.DanhGiaSach">
+              <MappingFragment StoreEntitySet="DanhGiaSach">
+                <ScalarProperty Name="NhanXet" ColumnName="NhanXet" />
+                <ScalarProperty Name="DiemDanhGia" ColumnName="DiemDanhGia" />
+                <ScalarProperty Name="IDSach" ColumnName="IDSach" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="MaDanhGia" ColumnName="MaDanhGia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DiemVaThuong">
+            <EntityTypeMapping TypeName="QLTVModel.DiemVaThuong">
+              <MappingFragment StoreEntitySet="DiemVaThuong">
+                <ScalarProperty Name="GameMineSweeper" ColumnName="GameMineSweeper" />
+                <ScalarProperty Name="GameQuiz" ColumnName="GameQuiz" />
+                <ScalarProperty Name="GameTetris" ColumnName="GameTetris" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="Diem" ColumnName="Diem" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="MaDiemVaThuong" ColumnName="MaDiemVaThuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MineSweeper">
+            <EntityTypeMapping TypeName="QLTVModel.MineSweeper">
+              <MappingFragment StoreEntitySet="MineSweeper">
+                <ScalarProperty Name="Limit" ColumnName="Limit" />
+                <ScalarProperty Name="DiemMineSweeper" ColumnName="DiemMineSweeper" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MoreBookReward">
+            <EntityTypeMapping TypeName="QLTVModel.MoreBookReward">
+              <MappingFragment StoreEntitySet="MoreBookReward">
+                <ScalarProperty Name="DiemCanDeDoi" ColumnName="DiemCanDeDoi" />
+                <ScalarProperty Name="MaPhanThuong" ColumnName="MaPhanThuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MuonTraSach">
+            <EntityTypeMapping TypeName="QLTVModel.MuonTraSach">
+              <MappingFragment StoreEntitySet="MuonTraSach">
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+                <ScalarProperty Name="SoTienPhat" ColumnName="SoTienPhat" />
+                <ScalarProperty Name="NgayTraThucTe" ColumnName="NgayTraThucTe" />
+                <ScalarProperty Name="NgayTraDuKien" ColumnName="NgayTraDuKien" />
+                <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+                <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+                <ScalarProperty Name="IDSach" ColumnName="IDSach" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDMuonTra" ColumnName="IDMuonTra" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NhanVien">
+            <EntityTypeMapping TypeName="QLTVModel.NhanVien">
+              <MappingFragment StoreEntitySet="NhanVien">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="NgayNhanViec" ColumnName="NgayNhanViec" />
+                <ScalarProperty Name="GioiThieu" ColumnName="GioiThieu" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhieuMuonSach">
+            <EntityTypeMapping TypeName="QLTVModel.PhieuMuonSach">
+              <MappingFragment StoreEntitySet="PhieuMuonSach">
+                <ScalarProperty Name="Coupon" ColumnName="Coupon" />
+                <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+                <ScalarProperty Name="IDSach" ColumnName="IDSach" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDPhieuMuonSach" ColumnName="IDPhieuMuonSach" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuanLiCaLam">
+            <EntityTypeMapping TypeName="QLTVModel.QuanLiCaLam">
+              <MappingFragment StoreEntitySet="QuanLiCaLam">
+                <ScalarProperty Name="GioBatDau" ColumnName="GioBatDau" />
+                <ScalarProperty Name="GioKetThuc" ColumnName="GioKetThuc" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="STTCa" ColumnName="STTCa" />
+                <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
+                <ScalarProperty Name="IDCa" ColumnName="IDCa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Quiz">
+            <EntityTypeMapping TypeName="QLTVModel.Quiz">
+              <MappingFragment StoreEntitySet="Quiz">
+                <ScalarProperty Name="Limit" ColumnName="Limit" />
+                <ScalarProperty Name="DiemQuiz" ColumnName="DiemQuiz" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sach">
+            <EntityTypeMapping TypeName="QLTVModel.Sach">
+              <MappingFragment StoreEntitySet="Sach">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="GioiThieu" ColumnName="GioiThieu" />
+                <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
+                <ScalarProperty Name="NhaXuatBan" ColumnName="NhaXuatBan" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="ChuyenNganh" ColumnName="ChuyenNganh" />
+                <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+                <ScalarProperty Name="TacGia" ColumnName="TacGia" />
+                <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+                <ScalarProperty Name="PhienBan" ColumnName="PhienBan" />
+                <ScalarProperty Name="NgonNgu" ColumnName="NgonNgu" />
+                <ScalarProperty Name="IDSach" ColumnName="IDSach" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaiKhoanNguoiDung">
+            <EntityTypeMapping TypeName="QLTVModel.TaiKhoanNguoiDung">
+              <MappingFragment StoreEntitySet="TaiKhoanNguoiDung">
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDTaiKhoanNguoiDung" ColumnName="IDTaiKhoanNguoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaiKhoanNhanVien">
+            <EntityTypeMapping TypeName="QLTVModel.TaiKhoanNhanVien">
+              <MappingFragment StoreEntitySet="TaiKhoanNhanVien">
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
+                <ScalarProperty Name="IDTaiKhoanNhanVien" ColumnName="IDTaiKhoanNhanVien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tetris">
+            <EntityTypeMapping TypeName="QLTVModel.Tetris">
+              <MappingFragment StoreEntitySet="Tetris">
+                <ScalarProperty Name="Limit" ColumnName="Limit" />
+                <ScalarProperty Name="DiemTetris" ColumnName="DiemTetris" />
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ThongBao">
+            <EntityTypeMapping TypeName="QLTVModel.ThongBao">
+              <MappingFragment StoreEntitySet="ThongBao">
+                <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="ChucVuNguoiNhan" ColumnName="ChucVuNguoiNhan" />
+                <ScalarProperty Name="EmailNguoiNhan" ColumnName="EmailNguoiNhan" />
+                <ScalarProperty Name="IDNguoiNhan" ColumnName="IDNguoiNhan" />
+                <ScalarProperty Name="NguoiGui" ColumnName="NguoiGui" />
+                <ScalarProperty Name="IDNguoiGui" ColumnName="IDNguoiGui" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="IDThongBao" ColumnName="IDThongBao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TuiDo">
+            <EntityTypeMapping TypeName="QLTVModel.TuiDo">
+              <MappingFragment StoreEntitySet="TuiDo">
+                <ScalarProperty Name="CountBookReward" ColumnName="CountBookReward" />
+                <ScalarProperty Name="CountWeekReward" ColumnName="CountWeekReward" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="MaTuiDo" ColumnName="MaTuiDo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MoreWeekReward">
+            <EntityTypeMapping TypeName="QLTVModel.MoreWeekReward">
+              <MappingFragment StoreEntitySet="MoreWeekReward">
+                <ScalarProperty Name="DiemCanDeDoi" ColumnName="DiemCanDeDoi" />
+                <ScalarProperty Name="MaPhanThuong" ColumnName="MaPhanThuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NguoiDung">
+            <EntityTypeMapping TypeName="QLTVModel.NguoiDung">
+              <MappingFragment StoreEntitySet="NguoiDung">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="LichSuMuon" ColumnName="LichSuMuon" />
+                <ScalarProperty Name="GioiThieu" ColumnName="GioiThieu" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="ChuyenNganh" ColumnName="ChuyenNganh" />
+                <ScalarProperty Name="Lop" ColumnName="Lop" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
