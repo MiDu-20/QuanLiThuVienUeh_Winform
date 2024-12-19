@@ -98,20 +98,6 @@ namespace QuanLiThuVienUeh
             openChildForm(new ff_History(idNguoiDung));
         }
 
-        private void button_Reward_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ff_Reward(idNguoiDung));
-        }
-
-        private void button_Games_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ff_Game(idNguoiDung));
-        }
-
-        private void button_Noti_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ff_ThongBaoNguoiDung(idNguoiDung));
-        }
         private void button_ChangePassword_Click(object sender, EventArgs e)
         {
             openChildForm(new ff_DoiMatKhau(idNguoiDung, ""));

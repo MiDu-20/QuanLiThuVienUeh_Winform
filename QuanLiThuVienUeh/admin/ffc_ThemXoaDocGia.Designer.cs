@@ -350,7 +350,6 @@
             this.comboBox_GioiTinhInput.Size = new System.Drawing.Size(156, 40);
             this.comboBox_GioiTinhInput.TabIndex = 10;
             this.comboBox_GioiTinhInput.TextChanged += new System.EventHandler(this.comboBox_GioiTinhInput_TextChanged);
-            this.comboBox_GioiTinhInput.Leave += new System.EventHandler(this.comboBox_GioiTinhInput_Leave);
             // 
             // panel_NgaySinhInput
             // 

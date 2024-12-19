@@ -32,17 +32,16 @@
             this.panel_Sidebar = new System.Windows.Forms.Panel();
             this.panel_LogoutButton = new System.Windows.Forms.Panel();
             this.button_Logout = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button_ChangePassword = new System.Windows.Forms.Button();
             this.panel_SettingButton = new System.Windows.Forms.Panel();
             this.panel_Null4 = new System.Windows.Forms.Panel();
             this.button_Null2 = new System.Windows.Forms.Button();
             this.panel_Null3 = new System.Windows.Forms.Panel();
             this.button_Null1 = new System.Windows.Forms.Button();
             this.panel_Null2 = new System.Windows.Forms.Panel();
-            this.button_Reward = new System.Windows.Forms.Button();
             this.panel_Null1 = new System.Windows.Forms.Panel();
-            this.button_Games = new System.Windows.Forms.Button();
             this.panel_RatingButton = new System.Windows.Forms.Panel();
-            this.button_Noti = new System.Windows.Forms.Button();
             this.panel_HistoryButton = new System.Windows.Forms.Panel();
             this.button_History = new System.Windows.Forms.Button();
             this.panel_BookingButton = new System.Windows.Forms.Panel();
@@ -62,15 +61,11 @@
             this.pictureBox_SearchIcon = new System.Windows.Forms.PictureBox();
             this.textBox_SearchFunction = new System.Windows.Forms.TextBox();
             this.panel_ChildForm = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button_ChangePassword = new System.Windows.Forms.Button();
             this.panel_Sidebar.SuspendLayout();
             this.panel_LogoutButton.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel_Null4.SuspendLayout();
             this.panel_Null3.SuspendLayout();
-            this.panel_Null2.SuspendLayout();
-            this.panel_Null1.SuspendLayout();
-            this.panel_RatingButton.SuspendLayout();
             this.panel_HistoryButton.SuspendLayout();
             this.panel_BookingButton.SuspendLayout();
             this.panel_SearchingButton.SuspendLayout();
@@ -82,7 +77,6 @@
             this.panel_SearchContainer.SuspendLayout();
             this.panel_SearchFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SearchIcon)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Sidebar
@@ -136,6 +130,35 @@
             this.button_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Logout.UseVisualStyleBackColor = true;
             this.button_Logout.Click += new System.EventHandler(this.button_Logout_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button_ChangePassword);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 737);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(289, 57);
+            this.panel1.TabIndex = 21;
+            // 
+            // button_ChangePassword
+            // 
+            this.button_ChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_ChangePassword.FlatAppearance.BorderSize = 0;
+            this.button_ChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ChangePassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_ChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("button_ChangePassword.Image")));
+            this.button_ChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_ChangePassword.Location = new System.Drawing.Point(21, 2);
+            this.button_ChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_ChangePassword.Name = "button_ChangePassword";
+            this.button_ChangePassword.Size = new System.Drawing.Size(241, 48);
+            this.button_ChangePassword.TabIndex = 14;
+            this.button_ChangePassword.Text = "      Change Password";
+            this.button_ChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_ChangePassword.UseVisualStyleBackColor = true;
+            this.button_ChangePassword.Click += new System.EventHandler(this.button_ChangePassword_Click);
             // 
             // panel_SettingButton
             // 
@@ -202,7 +225,6 @@
             // 
             // panel_Null2
             // 
-            this.panel_Null2.Controls.Add(this.button_Reward);
             this.panel_Null2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null2.Location = new System.Drawing.Point(0, 509);
             this.panel_Null2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -210,28 +232,8 @@
             this.panel_Null2.Size = new System.Drawing.Size(289, 57);
             this.panel_Null2.TabIndex = 17;
             // 
-            // button_Reward
-            // 
-            this.button_Reward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Reward.FlatAppearance.BorderSize = 0;
-            this.button_Reward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Reward.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Reward.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Reward.Image = ((System.Drawing.Image)(resources.GetObject("button_Reward.Image")));
-            this.button_Reward.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Reward.Location = new System.Drawing.Point(31, 4);
-            this.button_Reward.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Reward.Name = "button_Reward";
-            this.button_Reward.Size = new System.Drawing.Size(223, 48);
-            this.button_Reward.TabIndex = 16;
-            this.button_Reward.Text = "         Reward";
-            this.button_Reward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Reward.UseVisualStyleBackColor = true;
-            this.button_Reward.Click += new System.EventHandler(this.button_Reward_Click);
-            // 
             // panel_Null1
             // 
-            this.panel_Null1.Controls.Add(this.button_Games);
             this.panel_Null1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null1.Location = new System.Drawing.Point(0, 452);
             this.panel_Null1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -239,53 +241,14 @@
             this.panel_Null1.Size = new System.Drawing.Size(289, 57);
             this.panel_Null1.TabIndex = 16;
             // 
-            // button_Games
-            // 
-            this.button_Games.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Games.FlatAppearance.BorderSize = 0;
-            this.button_Games.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Games.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Games.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Games.Image = ((System.Drawing.Image)(resources.GetObject("button_Games.Image")));
-            this.button_Games.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Games.Location = new System.Drawing.Point(31, 5);
-            this.button_Games.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Games.Name = "button_Games";
-            this.button_Games.Size = new System.Drawing.Size(223, 48);
-            this.button_Games.TabIndex = 15;
-            this.button_Games.Text = "         Games";
-            this.button_Games.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Games.UseVisualStyleBackColor = true;
-            this.button_Games.Click += new System.EventHandler(this.button_Games_Click);
-            // 
             // panel_RatingButton
             // 
-            this.panel_RatingButton.Controls.Add(this.button_Noti);
             this.panel_RatingButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_RatingButton.Location = new System.Drawing.Point(0, 395);
             this.panel_RatingButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_RatingButton.Name = "panel_RatingButton";
             this.panel_RatingButton.Size = new System.Drawing.Size(289, 57);
             this.panel_RatingButton.TabIndex = 16;
-            // 
-            // button_Noti
-            // 
-            this.button_Noti.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Noti.FlatAppearance.BorderSize = 0;
-            this.button_Noti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Noti.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Noti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Noti.Image = ((System.Drawing.Image)(resources.GetObject("button_Noti.Image")));
-            this.button_Noti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Noti.Location = new System.Drawing.Point(31, 2);
-            this.button_Noti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Noti.Name = "button_Noti";
-            this.button_Noti.Size = new System.Drawing.Size(223, 48);
-            this.button_Noti.TabIndex = 14;
-            this.button_Noti.Text = "         Notification";
-            this.button_Noti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Noti.UseVisualStyleBackColor = true;
-            this.button_Noti.Click += new System.EventHandler(this.button_Noti_Click);
             // 
             // panel_HistoryButton
             // 
@@ -447,7 +410,7 @@
             // 
             this.pictureBox_LogoUeh.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_LogoUeh.Image")));
             this.pictureBox_LogoUeh.Location = new System.Drawing.Point(52, 5);
-            this.pictureBox_LogoUeh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox_LogoUeh.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox_LogoUeh.Name = "pictureBox_LogoUeh";
             this.pictureBox_LogoUeh.Size = new System.Drawing.Size(132, 91);
             this.pictureBox_LogoUeh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -473,7 +436,7 @@
             this.panel_SearchContainer.Controls.Add(this.panel_SearchFunction);
             this.panel_SearchContainer.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_SearchContainer.Location = new System.Drawing.Point(289, 0);
-            this.panel_SearchContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_SearchContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SearchContainer.Name = "panel_SearchContainer";
             this.panel_SearchContainer.Size = new System.Drawing.Size(1635, 134);
             this.panel_SearchContainer.TabIndex = 14;
@@ -485,7 +448,7 @@
             this.panel_SearchFunction.Controls.Add(this.pictureBox_SearchIcon);
             this.panel_SearchFunction.Controls.Add(this.textBox_SearchFunction);
             this.panel_SearchFunction.Location = new System.Drawing.Point(83, 23);
-            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SearchFunction.Name = "panel_SearchFunction";
             this.panel_SearchFunction.Size = new System.Drawing.Size(396, 50);
             this.panel_SearchFunction.TabIndex = 15;
@@ -509,7 +472,7 @@
             this.pictureBox_SearchIcon.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox_SearchIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_SearchIcon.Image")));
             this.pictureBox_SearchIcon.Location = new System.Drawing.Point(16, 10);
-            this.pictureBox_SearchIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox_SearchIcon.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox_SearchIcon.Name = "pictureBox_SearchIcon";
             this.pictureBox_SearchIcon.Size = new System.Drawing.Size(33, 31);
             this.pictureBox_SearchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -522,7 +485,7 @@
             this.textBox_SearchFunction.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_SearchFunction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_SearchFunction.Location = new System.Drawing.Point(59, 12);
-            this.textBox_SearchFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_SearchFunction.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_SearchFunction.Name = "textBox_SearchFunction";
             this.textBox_SearchFunction.Size = new System.Drawing.Size(320, 27);
             this.textBox_SearchFunction.TabIndex = 0;
@@ -533,39 +496,10 @@
             // 
             this.panel_ChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ChildForm.Location = new System.Drawing.Point(289, 134);
-            this.panel_ChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_ChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ChildForm.Name = "panel_ChildForm";
             this.panel_ChildForm.Size = new System.Drawing.Size(1635, 880);
             this.panel_ChildForm.TabIndex = 15;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button_ChangePassword);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 737);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 57);
-            this.panel1.TabIndex = 21;
-            // 
-            // button_ChangePassword
-            // 
-            this.button_ChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ChangePassword.FlatAppearance.BorderSize = 0;
-            this.button_ChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ChangePassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_ChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("button_ChangePassword.Image")));
-            this.button_ChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChangePassword.Location = new System.Drawing.Point(21, 2);
-            this.button_ChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_ChangePassword.Name = "button_ChangePassword";
-            this.button_ChangePassword.Size = new System.Drawing.Size(241, 48);
-            this.button_ChangePassword.TabIndex = 14;
-            this.button_ChangePassword.Text = "      Change Password";
-            this.button_ChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChangePassword.UseVisualStyleBackColor = true;
-            this.button_ChangePassword.Click += new System.EventHandler(this.button_ChangePassword_Click);
             // 
             // Form_NguoiDung
             // 
@@ -576,7 +510,7 @@
             this.Controls.Add(this.panel_ChildForm);
             this.Controls.Add(this.panel_SearchContainer);
             this.Controls.Add(this.panel_Sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1194, 726);
             this.Name = "Form_NguoiDung";
             this.ShowIcon = false;
@@ -585,11 +519,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel_Sidebar.ResumeLayout(false);
             this.panel_LogoutButton.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel_Null4.ResumeLayout(false);
             this.panel_Null3.ResumeLayout(false);
-            this.panel_Null2.ResumeLayout(false);
-            this.panel_Null1.ResumeLayout(false);
-            this.panel_RatingButton.ResumeLayout(false);
             this.panel_HistoryButton.ResumeLayout(false);
             this.panel_BookingButton.ResumeLayout(false);
             this.panel_SearchingButton.ResumeLayout(false);
@@ -602,7 +534,6 @@
             this.panel_SearchFunction.ResumeLayout(false);
             this.panel_SearchFunction.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SearchIcon)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -624,7 +555,6 @@
         private System.Windows.Forms.Button button_Searching;
         private System.Windows.Forms.Panel panel_Null1;
         private System.Windows.Forms.Panel panel_RatingButton;
-        private System.Windows.Forms.Button button_Noti;
         private System.Windows.Forms.Panel panel_Null4;
         private System.Windows.Forms.Button button_Null2;
         private System.Windows.Forms.Panel panel_Null3;
@@ -639,8 +569,6 @@
         private System.Windows.Forms.Panel panel_LogoutButton;
         private System.Windows.Forms.Button button_Logout;
         private System.Windows.Forms.Panel panel_ChildForm;
-        private System.Windows.Forms.Button button_Games;
-        private System.Windows.Forms.Button button_Reward;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button_ChangePassword;
     }

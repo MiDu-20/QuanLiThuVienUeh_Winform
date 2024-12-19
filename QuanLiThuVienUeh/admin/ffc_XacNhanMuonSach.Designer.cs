@@ -370,7 +370,6 @@
             this.dataGridView_PhieuMuonSach.Size = new System.Drawing.Size(1176, 342);
             this.dataGridView_PhieuMuonSach.TabIndex = 38;
             this.dataGridView_PhieuMuonSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PhieuMuonSach_CellClick);
-            this.dataGridView_PhieuMuonSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PhieuMuonSach_CellContentClick);
             this.dataGridView_PhieuMuonSach.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_PhieuMuonSach_CellDoubleClick);
             // 
             // panel_Search

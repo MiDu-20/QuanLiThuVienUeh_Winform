@@ -18,15 +18,13 @@ namespace QuanLiThuVienUeh.nguoidung
         public ffc_ThongTinSachChiTiet(int idSach, int idNguoiDung, string formOpen)
         {
             InitializeComponent();
-            if(formOpen =="History")
+            if (formOpen == "History")
             {
                 button_Booking.Visible = false;
-                button_Coupon.Visible = false;
             }
-               
+
             this.idSach = idSach;
             this.idNguoiDung = idNguoiDung;
-            checkBox_Coupon.Visible = false;
             LoadData(idSach);
         }
 
@@ -35,7 +33,6 @@ namespace QuanLiThuVienUeh.nguoidung
             InitializeComponent();
             this.idSach = idSach;
             this.idNguoiDung = idNguoiDung;
-            checkBox_Coupon.Visible = false;
             LoadData(idSach);
         }
 
@@ -43,11 +40,9 @@ namespace QuanLiThuVienUeh.nguoidung
         {
             InitializeComponent();
 
-                button_Booking.Visible = false;
-                button_Coupon.Visible = false;
+            button_Booking.Visible = false;
             this.idSach = idSach;
             this.idNguoiDung = idNguoiDung;
-            checkBox_Coupon.Visible = false;
             LoadData(idSach);
         }
 
@@ -77,53 +72,20 @@ namespace QuanLiThuVienUeh.nguoidung
         {
             using (QLTVEntities db = new QLTVEntities())
             {
-                var userTuiDo = db.TuiDo.Where(p => p.IDNguoiDung == idNguoiDung).FirstOrDefault();
-                if (userTuiDo == null)
+                if (db.MuonTraSach.Where(p => p.IDNguoiDung == idNguoiDung && p.TinhTrang == "Đang mượn").Count() < 3)
                 {
-                    MessageBox.Show("Hãy vào mục Reward để cập nhật Coupon trước khi mượn sách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    PhieuMuonSach pms = new PhieuMuonSach();
+                    pms.IDPhieuMuonSach = db.PhieuMuonSach.Max(s => s.IDPhieuMuonSach) + 1;
+                    pms.IDSach = idSach;
+                    pms.TenSach = db.Sach.Find(idSach).TenSach;
+                    pms.IDNguoiDung = idNguoiDung;
+                    pms.HoTen = db.NguoiDung.Find(idNguoiDung).HoTen;
+                    db.PhieuMuonSach.Add(pms);
+                    db.SaveChanges();
+                    MessageBox.Show("Tạo phiếu mượn sách thành công \nKiểm tra phiếu mượn sách ở mục Booking", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else
-                {
-                    var countBook = userTuiDo.CountBookReward;
-                    if (db.MuonTraSach.Where(p => p.IDNguoiDung == idNguoiDung && p.TinhTrang == "Đang mượn").Count() < 3 + countBook)
-                    {
-                        PhieuMuonSach pms = new PhieuMuonSach();
-                        pms.IDPhieuMuonSach = db.PhieuMuonSach.Max(s => s.IDPhieuMuonSach) + 1;
-                        pms.IDSach = idSach;
-                        pms.TenSach = db.Sach.Find(idSach).TenSach;
-                        pms.IDNguoiDung = idNguoiDung;
-                        pms.HoTen = db.NguoiDung.Find(idNguoiDung).HoTen;
-                        if (checkBox_Coupon.Checked == true)
-                            pms.Coupon = true;
-                        else if (checkBox_Coupon.Checked == false)
-                            pms.Coupon = false;
-                        db.PhieuMuonSach.Add(pms);
-                        db.SaveChanges();
-                        MessageBox.Show("Tạo phiếu mượn sách thành công \nKiểm tra phiếu mượn sách ở mục Booking", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else MessageBox.Show("Bạn đã mượn tối đa sách!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning); ;
-                }
+                else MessageBox.Show("Bạn đã mượn tối đa sách!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
         }
-
-        private void button_Coupon_Click(object sender, EventArgs e)
-        {
-            using (QLTVEntities db = new QLTVEntities())
-            {
-                var userTuiDo = db.TuiDo.Where(s => s.IDNguoiDung == idNguoiDung).FirstOrDefault();
-                if (userTuiDo == null)
-                {
-                    checkBox_Coupon.Enabled = false;
-                    MessageBox.Show("Bạn chưa có coupon \nĐổi coupon ở mục Reward", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (userTuiDo.CountWeekReward == 0)
-                {
-                    checkBox_Coupon.Enabled = false;
-                    MessageBox.Show("Bạn chưa có coupon \nĐổi coupon ở mục Reward", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                    checkBox_Coupon.Visible = true;
-            }
-        }
-    }
+    } 
 }

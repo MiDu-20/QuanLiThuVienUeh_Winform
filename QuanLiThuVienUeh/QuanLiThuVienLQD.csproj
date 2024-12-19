@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{888EB4AF-D637-4EBE-9CA3-FA2FDD934134}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLiThuVienUeh</RootNamespace>
+    <AssemblyName>QuanLiThuVienUeh</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.8.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.8\lib\net48\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UserCa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\UserCa.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\ffc_ChinhSuaDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_ChinhSuaDocGia.Designer.cs">
+      <DependentUpon>ffc_ChinhSuaDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaDocGia.Designer.cs">
+      <DependentUpon>ffc_ThemXoaDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaNhanVien.Designer.cs">
+      <DependentUpon>ffc_ThemXoaNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_ThemXoaSach.Designer.cs">
+      <DependentUpon>ffc_ThemXoaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_ThongTinNhanVienChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_ThongTinNhanVienChiTiet.Designer.cs">
+      <DependentUpon>ffc_ThongTinNhanVienChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_XacNhanMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_XacNhanMuonSach.Designer.cs">
+      <DependentUpon>ffc_XacNhanMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_XacNhanTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_XacNhanTraSach.Designer.cs">
+      <DependentUpon>ffc_XacNhanTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_XemLichSuMuonTraDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_XemLichSuMuonTraDocGia.Designer.cs">
+      <DependentUpon>ffc_XemLichSuMuonTraDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ffc_XemThongTinDocGiaChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ffc_XemThongTinDocGiaChiTiet.Designer.cs">
+      <DependentUpon>ffc_XemThongTinDocGiaChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ff_ChinhSuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ff_ChinhSuaTaiKhoan.Designer.cs">
+      <DependentUpon>ff_ChinhSuaTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ff_MuonTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ff_MuonTraSach.Designer.cs">
+      <DependentUpon>ff_MuonTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ff_QuanLiDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ff_QuanLiDocGia.Designer.cs">
+      <DependentUpon>ff_QuanLiDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ff_ThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ff_ThongTinNhanVien.Designer.cs">
+      <DependentUpon>ff_ThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ff_ThongTinSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\ff_ThongTinSach.Designer.cs">
+      <DependentUpon>ff_ThongTinSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhGiaSach.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="login\ffc_CapNhatMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\ffc_CapNhatMatKhau.Designer.cs">
+      <DependentUpon>ffc_CapNhatMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\ffc_QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\ffc_QuenMatKhau.Designer.cs">
+      <DependentUpon>ffc_QuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\Form_Login_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\Form_Login_Main.Designer.cs">
+      <DependentUpon>Form_Login_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\Form_Login_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\Form_Login_Staff.Designer.cs">
+      <DependentUpon>Form_Login_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\Form_Login_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\Form_Login_Student.Designer.cs">
+      <DependentUpon>Form_Login_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuonTraSach.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ffc_ThongTinSachChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ffc_ThongTinSachChiTiet.Designer.cs">
+      <DependentUpon>ffc_ThongTinSachChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ff_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ff_Booking.Designer.cs">
+      <DependentUpon>ff_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ff_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ff_History.Designer.cs">
+      <DependentUpon>ff_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ff_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ff_Home.Designer.cs">
+      <DependentUpon>ff_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ff_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ff_Profile.Designer.cs">
+      <DependentUpon>ff_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\ff_Searching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\ff_Searching.Designer.cs">
+      <DependentUpon>ff_Searching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoidung\Form_NguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoidung\Form_NguoiDung.Designer.cs">
+      <DependentUpon>Form_NguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nhanvien\ff_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhanvien\ff_DoiMatKhau.Designer.cs">
+      <DependentUpon>ff_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhanvien\Form_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhanvien\Form_NhanVien.Designer.cs">
+      <DependentUpon>Form_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuMuonSach.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTV.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTV.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLTV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTV.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Sach.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoanNguoiDung.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoanNhanVien.cs">
+      <DependentUpon>QLTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUsing\DayReview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUsing\DayReview.Designer.cs">
+      <DependentUpon>DayReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUsing\UserBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUsing\UserBlank.Designer.cs">
+      <DependentUpon>UserBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUsing\UserDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUsing\UserDay.Designer.cs">
+      <DependentUpon>UserDay.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin\ffc_ChinhSuaDocGia.resx">
+      <DependentUpon>ffc_ChinhSuaDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_ThemXoaDocGia.resx">
+      <DependentUpon>ffc_ThemXoaDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_ThemXoaNhanVien.resx">
+      <DependentUpon>ffc_ThemXoaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_ThemXoaSach.resx">
+      <DependentUpon>ffc_ThemXoaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_ThongTinNhanVienChiTiet.resx">
+      <DependentUpon>ffc_ThongTinNhanVienChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_XacNhanMuonSach.resx">
+      <DependentUpon>ffc_XacNhanMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_XacNhanTraSach.resx">
+      <DependentUpon>ffc_XacNhanTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_XemLichSuMuonTraDocGia.resx">
+      <DependentUpon>ffc_XemLichSuMuonTraDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ffc_XemThongTinDocGiaChiTiet.resx">
+      <DependentUpon>ffc_XemThongTinDocGiaChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ff_ChinhSuaTaiKhoan.resx">
+      <DependentUpon>ff_ChinhSuaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ff_MuonTraSach.resx">
+      <DependentUpon>ff_MuonTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ff_QuanLiDocGia.resx">
+      <DependentUpon>ff_QuanLiDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ff_ThongTinNhanVien.resx">
+      <DependentUpon>ff_ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\ff_ThongTinSach.resx">
+      <DependentUpon>ff_ThongTinSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\ffc_CapNhatMatKhau.resx">
+      <DependentUpon>ffc_CapNhatMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\ffc_QuenMatKhau.resx">
+      <DependentUpon>ffc_QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\Form_Login_Main.resx">
+      <DependentUpon>Form_Login_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\Form_Login_Staff.resx">
+      <DependentUpon>Form_Login_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\Form_Login_Student.resx">
+      <DependentUpon>Form_Login_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ffc_ThongTinSachChiTiet.resx">
+      <DependentUpon>ffc_ThongTinSachChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ff_Booking.resx">
+      <DependentUpon>ff_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ff_History.resx">
+      <DependentUpon>ff_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ff_Home.resx">
+      <DependentUpon>ff_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ff_Profile.resx">
+      <DependentUpon>ff_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\ff_Searching.resx">
+      <DependentUpon>ff_Searching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoidung\Form_NguoiDung.resx">
+      <DependentUpon>Form_NguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhanvien\ff_DoiMatKhau.resx">
+      <DependentUpon>ff_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhanvien\Form_NhanVien.resx">
+      <DependentUpon>Form_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="QLTV.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLTV.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLTV.edmx.diagram">
+      <DependentUpon>QLTV.edmx</DependentUpon>
+    </None>
+    <None Include="Resources\New Microsoft Word Document.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-regular-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-orange-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Login_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Login_Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Login_Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_NguoiDung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_NhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Ueh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-green-icon-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noti-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noti-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UEH_Login_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-account-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-icon.png" />
+    <None Include="Resources\x-24850_1280.png" />
+    <None Include="Resources\wrench-green-icon.png" />
+    <None Include="Resources\uehgif.gif" />
+    <None Include="Resources\ueh.png" />
+    <None Include="Resources\ueh.jpg" />
+    <None Include="Resources\trashbox-icon.png" />
+    <None Include="Resources\tiles.png" />
+    <None Include="Resources\tetrisgif.gif" />
+    <None Include="Resources\tetris.png" />
+    <None Include="Resources\show-hide-password-icon.png" />
+    <None Include="Resources\send-white-icon.png" />
+    <None Include="Resources\send-green-icon.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\QuangCao3.jpg" />
+    <None Include="Resources\QuangCao2.jpg" />
+    <None Include="Resources\QuangCao1.jpg" />
+    <None Include="Resources\Q30.png" />
+    <None Include="Resources\Q29.png" />
+    <None Include="Resources\Q28.png" />
+    <None Include="Resources\Q27.png" />
+    <None Include="Resources\Q26.png" />
+    <None Include="Resources\Q25.png" />
+    <None Include="Resources\Q24.png" />
+    <None Include="Resources\Q23.png" />
+    <None Include="Resources\Q22.png" />
+    <None Include="Resources\Q21.png" />
+    <None Include="Resources\Q20.png" />
+    <None Include="Resources\Q19.png" />
+    <None Include="Resources\Q18.png" />
+    <None Include="Resources\Q17.png" />
+    <None Include="Resources\Q16.png" />
+    <None Include="Resources\Q15.png" />
+    <None Include="Resources\Q14.png" />
+    <None Include="Resources\Q13.png" />
+    <None Include="Resources\Q12.png" />
+    <None Include="Resources\Q11.png" />
+    <None Include="Resources\Q10.png" />
+    <None Include="Resources\Q9.png" />
+    <None Include="Resources\Q8.png" />
+    <None Include="Resources\Q7.png" />
+    <None Include="Resources\Q6.png" />
+    <None Include="Resources\Q5.png" />
+    <None Include="Resources\Q4.png" />
+    <None Include="Resources\Q3.png" />
+    <None Include="Resources\Q2.png" />
+    <None Include="Resources\Q1.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\plus-orange-icon.png" />
+    <None Include="Resources\PlusAddition.png" />
+    <None Include="Resources\Minesweepergif.gif" />
+    <None Include="Resources\media_1042ff48ca7f6d77bde5524b0b57a191dd76ee0a0.jpeg" />
+    <None Include="Resources\logo-ueh-white-icon.png" />
+    <None Include="Resources\307801667_1122376888699820_2584627322346665319_n.gif" />
+    <None Include="Resources\416283081_896809121942807_4633255329302704932_n.png" />
+    <None Include="Resources\431314309_888491913011939_7945029528289598906_n.png" />
+    <None Include="Resources\back-button-icon.png" />
+    <None Include="Resources\book-borrow-green-icon.png" />
+    <None Include="Resources\book-return-green-icon.png" />
+    <None Include="Resources\decor1-email-icon.png" />
+    <None Include="Resources\decor2-email-icon.png" />
+    <None Include="Resources\decor3-email-icon.png" />
+    <None Include="Resources\decor4-email-icon.png" />
+    <None Include="Resources\decor5-email-icon.png" />
+    <None Include="Resources\decor6-email-icon.png" />
+    <None Include="Resources\decor7-email-icon.png" />
+    <None Include="Resources\decor8-email-icon.png" />
+    <None Include="Resources\exit-green-icon.png" />
+    <None Include="Resources\filter-black-icon.png" />
+    <None Include="Resources\Flat_restart_icon.svg.png" />
+    <None Include="Resources\book-test.jpeg" />
+    <None Include="Resources\book-test-3-icon.jpg" />
+    <None Include="Resources\book-test-icon.jpg" />
+    <Content Include="QLTV.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTV.edmx</DependentUpon>
+      <LastGenOutput>QLTV.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLTV.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTV.edmx</DependentUpon>
+      <LastGenOutput>QLTV.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\462583546_3919454781709692_880404863298391093_n.png" />
+    <None Include="Resources\462583546_3919454781709692_880404863298391093_n1.png" />
+    <None Include="Resources\Co-so-N-1536x863.jpg" />
+    <None Include="Resources\Co-so-N-1536x8631.jpg" />
+    <Content Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

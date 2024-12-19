@@ -123,6 +123,26 @@ namespace QuanLiThuVienUeh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _462583546_3919454781709692_880404863298391093_n {
+            get {
+                object obj = ResourceManager.GetObject("462583546_3919454781709692_880404863298391093_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _462583546_3919454781709692_880404863298391093_n1 {
+            get {
+                object obj = ResourceManager.GetObject("462583546_3919454781709692_880404863298391093_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap account_icon {
             get {
                 object obj = ResourceManager.GetObject("account_icon", resourceCulture);
@@ -326,6 +346,26 @@ namespace QuanLiThuVienUeh.Properties {
         internal static System.Drawing.Bitmap Button_Login1 {
             get {
                 object obj = ResourceManager.GetObject("Button_Login1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Co_so_N_1536x863 {
+            get {
+                object obj = ResourceManager.GetObject("Co-so-N-1536x863", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Co_so_N_1536x8631 {
+            get {
+                object obj = ResourceManager.GetObject("Co-so-N-1536x8631", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

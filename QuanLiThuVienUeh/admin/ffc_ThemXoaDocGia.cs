@@ -170,7 +170,7 @@ namespace QuanLiThuVienUeh.admin
                     taiKhoanNguoiDung.MatKhau = randomPassword;
                     db.TaiKhoanNguoiDung.Add(taiKhoanNguoiDung);
                     db.SaveChanges();
-                    MessageBox.Show("Thêm độc giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Thêm độc giả thành công\nTài khoản đăng nhập của độc giả là: " + taiKhoanNguoiDung.Email.ToString() +"\nMật khẩu là: " + taiKhoanNguoiDung.MatKhau.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else { MessageBox.Show("Thêm độc giả thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
@@ -308,18 +308,6 @@ namespace QuanLiThuVienUeh.admin
             if (!found)
             {
                 comboBox_GioiTinhInput.SelectedIndex = -1;
-            }
-        }
-
-        private void comboBox_GioiTinhInput_Leave(object sender, EventArgs e)
-        {
-            using (QLTVEntities db = new QLTVEntities())
-            {
-                if ((comboBox_GioiTinhInput.Text != "Nam") || (comboBox_GioiTinhInput.Text == "Nữ"))
-                {
-                    comboBox_GioiTinhInput.Text = "";
-                }
-                else return;
             }
         }
 

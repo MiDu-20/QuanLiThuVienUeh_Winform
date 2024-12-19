@@ -544,7 +544,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(317, 36);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.Leave += new System.EventHandler(this.comboBox1_Leave);
             // 
             // comboBox2
             // 
@@ -554,7 +553,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(360, 36);
             this.comboBox2.TabIndex = 1;
-            this.comboBox2.Leave += new System.EventHandler(this.comboBox2_Leave);
             // 
             // ffc_ThemXoaSach
             // 

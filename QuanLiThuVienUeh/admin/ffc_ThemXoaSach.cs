@@ -235,40 +235,6 @@ namespace QuanLiThuVienUeh.admin
             }
         }
 
-        private void comboBox2_Leave(object sender, EventArgs e)
-        {
-            using (QLTVEntities db = new QLTVEntities())
-            {
-                var distinctNhaXuatBan = db.Sach.Select(s => s.NhaXuatBan).Distinct().ToList();
-
-                foreach(var item in distinctNhaXuatBan)
-                {
-                    if (comboBox2.Text != item)
-                    {
-                        comboBox2.Text = "";
-                    }
-                    else return;
-                }
-            }
-        }
-
-        private void comboBox1_Leave(object sender, EventArgs e)
-        {
-            using (QLTVEntities db = new QLTVEntities())
-            {
-                var distincttheloai = db.Sach.Select(s => s.TheLoai).Distinct().ToList();
-
-                foreach (var item in distincttheloai)
-                {
-                    if (comboBox1.Text != item)
-                    {
-                        comboBox1.Text = "";
-                    }
-                    else return;
-                }
-            }
-        }
-
         private void dateTimePicker_NamXuatBanInsertInput_ValueChanged(object sender, EventArgs e)
         {
             if (dateTimePicker_NamXuatBanInsertInput.Value > DateTime.Now)

@@ -25,24 +25,13 @@ namespace QuanLiThuVienUeh
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CauHoi> CauHoi { get; set; }
-        public virtual DbSet<DangKyCaLam> DangKyCaLam { get; set; }
         public virtual DbSet<DanhGiaSach> DanhGiaSach { get; set; }
-        public virtual DbSet<DiemVaThuong> DiemVaThuong { get; set; }
-        public virtual DbSet<MineSweeper> MineSweeper { get; set; }
-        public virtual DbSet<MoreBookReward> MoreBookReward { get; set; }
         public virtual DbSet<MuonTraSach> MuonTraSach { get; set; }
+        public virtual DbSet<NguoiDung> NguoiDung { get; set; }
         public virtual DbSet<NhanVien> NhanVien { get; set; }
         public virtual DbSet<PhieuMuonSach> PhieuMuonSach { get; set; }
-        public virtual DbSet<QuanLiCaLam> QuanLiCaLam { get; set; }
-        public virtual DbSet<Quiz> Quiz { get; set; }
         public virtual DbSet<Sach> Sach { get; set; }
         public virtual DbSet<TaiKhoanNguoiDung> TaiKhoanNguoiDung { get; set; }
         public virtual DbSet<TaiKhoanNhanVien> TaiKhoanNhanVien { get; set; }
-        public virtual DbSet<Tetris> Tetris { get; set; }
-        public virtual DbSet<ThongBao> ThongBao { get; set; }
-        public virtual DbSet<TuiDo> TuiDo { get; set; }
-        public virtual DbSet<MoreWeekReward> MoreWeekReward { get; set; }
-        public virtual DbSet<NguoiDung> NguoiDung { get; set; }
     }
 }

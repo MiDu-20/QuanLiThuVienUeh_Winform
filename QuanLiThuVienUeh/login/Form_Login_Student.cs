@@ -72,10 +72,10 @@ namespace QuanLiThuVienUeh
         private void button_SignIn_Click(object sender, EventArgs e)
         {
            try
-            {
-                string hashedPassword = HashPassword(textBox_Password.Text);
+           {
                 using (QLTVEntities db = new QLTVEntities())
                 {
+                    string hashedPassword = HashPassword(textBox_Password.Text);
                     if (db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text && r.MatKhau == textBox_Password.Text).Count() > 0)
                     {
                         idNguoiDung = (int)db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text && r.MatKhau == textBox_Password.Text).Select(r => r.IDNguoiDung).FirstOrDefault();
@@ -93,11 +93,11 @@ namespace QuanLiThuVienUeh
                     else
                         MessageBox.Show("Nhập sai Tài khoản/Mật khẩu", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            catch (Exception)
-            {
+           }
+           catch (Exception)
+           {
                 MessageBox.Show("Something went wrong", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-            }
+           }
         }
 
         private void linkLabel_ForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

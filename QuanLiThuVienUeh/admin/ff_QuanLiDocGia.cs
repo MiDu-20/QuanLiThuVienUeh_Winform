@@ -460,8 +460,8 @@ namespace QuanLiThuVienUeh.admin
 
         private void button_Add_Click(object sender, EventArgs e)
         {
-            //ffc_ThemXoaDocGia form = new ffc_ThemXoaDocGia();
-            //form.Show();
+            ffc_ThemXoaDocGia form = new ffc_ThemXoaDocGia();
+            form.Show();
         }
 
         private void dataGridView_ThongTinDocGia_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

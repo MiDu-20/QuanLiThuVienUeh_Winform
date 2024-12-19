@@ -39,8 +39,10 @@
             this.panel_Main = new System.Windows.Forms.Panel();
             this.dataGridView_ThongKeMuonTra = new System.Windows.Forms.DataGridView();
             this.panel_Null4 = new System.Windows.Forms.Panel();
+            this.button_TraSach = new System.Windows.Forms.Button();
             this.button_ReturnLastPage = new System.Windows.Forms.Button();
             this.button_ReturnFirstPage = new System.Windows.Forms.Button();
+            this.button_MuonSach = new System.Windows.Forms.Button();
             this.label_Previous = new System.Windows.Forms.Label();
             this.button_ChangePage3 = new System.Windows.Forms.Button();
             this.button_ChangePage1 = new System.Windows.Forms.Button();
@@ -53,8 +55,6 @@
             this.label_ThongTinDocGia = new System.Windows.Forms.Label();
             this.panel_Null1 = new System.Windows.Forms.Panel();
             this.panel_Null2 = new System.Windows.Forms.Panel();
-            this.button_TraSach = new System.Windows.Forms.Button();
-            this.button_MuonSach = new System.Windows.Forms.Button();
             this.panel_SearchFunction.SuspendLayout();
             this.panel_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ThongKeMuonTra)).BeginInit();
@@ -87,7 +87,7 @@
             this.panel_SearchFunction.Controls.Add(this.panel_Null2);
             this.panel_SearchFunction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_SearchFunction.Location = new System.Drawing.Point(0, 0);
-            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SearchFunction.Name = "panel_SearchFunction";
             this.panel_SearchFunction.Size = new System.Drawing.Size(1508, 693);
             this.panel_SearchFunction.TabIndex = 1;
@@ -99,7 +99,7 @@
             this.panel_Main.Controls.Add(this.panel_Null3);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(41, 0);
-            this.panel_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(1438, 693);
             this.panel_Main.TabIndex = 20;
@@ -177,10 +177,29 @@
             this.panel_Null4.Controls.Add(this.button_ChangePage2);
             this.panel_Null4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Null4.Location = new System.Drawing.Point(0, 618);
-            this.panel_Null4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null4.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null4.Name = "panel_Null4";
             this.panel_Null4.Size = new System.Drawing.Size(1438, 75);
             this.panel_Null4.TabIndex = 1;
+            // 
+            // button_TraSach
+            // 
+            this.button_TraSach.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_TraSach.FlatAppearance.BorderSize = 0;
+            this.button_TraSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_TraSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_TraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_TraSach.Image = ((System.Drawing.Image)(resources.GetObject("button_TraSach.Image")));
+            this.button_TraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_TraSach.Location = new System.Drawing.Point(271, 14);
+            this.button_TraSach.Margin = new System.Windows.Forms.Padding(4);
+            this.button_TraSach.Name = "button_TraSach";
+            this.button_TraSach.Size = new System.Drawing.Size(231, 49);
+            this.button_TraSach.TabIndex = 20;
+            this.button_TraSach.Text = "      Trả sách";
+            this.button_TraSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_TraSach.UseVisualStyleBackColor = true;
+            this.button_TraSach.Click += new System.EventHandler(this.button_TraSach_Click);
             // 
             // button_ReturnLastPage
             // 
@@ -193,7 +212,7 @@
             this.button_ReturnLastPage.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ReturnLastPage.ForeColor = System.Drawing.Color.Black;
             this.button_ReturnLastPage.Location = new System.Drawing.Point(1317, 14);
-            this.button_ReturnLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ReturnLastPage.Margin = new System.Windows.Forms.Padding(4);
             this.button_ReturnLastPage.Name = "button_ReturnLastPage";
             this.button_ReturnLastPage.Size = new System.Drawing.Size(53, 49);
             this.button_ReturnLastPage.TabIndex = 19;
@@ -212,13 +231,33 @@
             this.button_ReturnFirstPage.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ReturnFirstPage.ForeColor = System.Drawing.Color.Black;
             this.button_ReturnFirstPage.Location = new System.Drawing.Point(1004, 14);
-            this.button_ReturnFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ReturnFirstPage.Margin = new System.Windows.Forms.Padding(4);
             this.button_ReturnFirstPage.Name = "button_ReturnFirstPage";
             this.button_ReturnFirstPage.Size = new System.Drawing.Size(53, 49);
             this.button_ReturnFirstPage.TabIndex = 18;
             this.button_ReturnFirstPage.Text = "<<";
             this.button_ReturnFirstPage.UseVisualStyleBackColor = false;
             this.button_ReturnFirstPage.Click += new System.EventHandler(this.button_ReturnFirstPage_Click);
+            // 
+            // button_MuonSach
+            // 
+            this.button_MuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_MuonSach.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_MuonSach.FlatAppearance.BorderSize = 0;
+            this.button_MuonSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_MuonSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_MuonSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("button_MuonSach.Image")));
+            this.button_MuonSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_MuonSach.Location = new System.Drawing.Point(0, 14);
+            this.button_MuonSach.Margin = new System.Windows.Forms.Padding(4);
+            this.button_MuonSach.Name = "button_MuonSach";
+            this.button_MuonSach.Size = new System.Drawing.Size(231, 49);
+            this.button_MuonSach.TabIndex = 11;
+            this.button_MuonSach.Text = "      Mượn sách";
+            this.button_MuonSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_MuonSach.UseVisualStyleBackColor = true;
+            this.button_MuonSach.Click += new System.EventHandler(this.button_MuonSach_Click);
             // 
             // label_Previous
             // 
@@ -244,7 +283,7 @@
             this.button_ChangePage3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage3.ForeColor = System.Drawing.Color.Black;
             this.button_ChangePage3.Location = new System.Drawing.Point(1240, 14);
-            this.button_ChangePage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage3.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage3.Name = "button_ChangePage3";
             this.button_ChangePage3.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage3.TabIndex = 17;
@@ -263,7 +302,7 @@
             this.button_ChangePage1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage1.ForeColor = System.Drawing.Color.White;
             this.button_ChangePage1.Location = new System.Drawing.Point(1084, 14);
-            this.button_ChangePage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage1.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage1.Name = "button_ChangePage1";
             this.button_ChangePage1.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage1.TabIndex = 13;
@@ -295,7 +334,7 @@
             this.button_ChangePage2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage2.ForeColor = System.Drawing.Color.Black;
             this.button_ChangePage2.Location = new System.Drawing.Point(1162, 14);
-            this.button_ChangePage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage2.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage2.Name = "button_ChangePage2";
             this.button_ChangePage2.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage2.TabIndex = 14;
@@ -310,7 +349,7 @@
             this.panel_Null3.Controls.Add(this.label_ThongTinDocGia);
             this.panel_Null3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null3.Location = new System.Drawing.Point(0, 0);
-            this.panel_Null3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null3.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null3.Name = "panel_Null3";
             this.panel_Null3.Size = new System.Drawing.Size(1438, 127);
             this.panel_Null3.TabIndex = 0;
@@ -321,7 +360,7 @@
             this.panel_Search.Controls.Add(this.label_SearchName);
             this.panel_Search.Controls.Add(this.textBox_SearchName);
             this.panel_Search.Location = new System.Drawing.Point(0, 58);
-            this.panel_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Search.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(640, 48);
             this.panel_Search.TabIndex = 9;
@@ -346,7 +385,7 @@
             this.textBox_SearchName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_SearchName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_SearchName.Location = new System.Drawing.Point(3, 10);
-            this.textBox_SearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_SearchName.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_SearchName.Name = "textBox_SearchName";
             this.textBox_SearchName.Size = new System.Drawing.Size(447, 27);
             this.textBox_SearchName.TabIndex = 7;
@@ -369,7 +408,7 @@
             // 
             this.panel_Null1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Null1.Location = new System.Drawing.Point(0, 0);
-            this.panel_Null1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null1.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null1.Name = "panel_Null1";
             this.panel_Null1.Size = new System.Drawing.Size(41, 693);
             this.panel_Null1.TabIndex = 18;
@@ -378,49 +417,10 @@
             // 
             this.panel_Null2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_Null2.Location = new System.Drawing.Point(1479, 0);
-            this.panel_Null2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null2.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null2.Name = "panel_Null2";
             this.panel_Null2.Size = new System.Drawing.Size(29, 693);
             this.panel_Null2.TabIndex = 19;
-            // 
-            // button_TraSach
-            // 
-            this.button_TraSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_TraSach.FlatAppearance.BorderSize = 0;
-            this.button_TraSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_TraSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_TraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_TraSach.Image = ((System.Drawing.Image)(resources.GetObject("button_TraSach.Image")));
-            this.button_TraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.Location = new System.Drawing.Point(271, 14);
-            this.button_TraSach.Margin = new System.Windows.Forms.Padding(4);
-            this.button_TraSach.Name = "button_TraSach";
-            this.button_TraSach.Size = new System.Drawing.Size(231, 49);
-            this.button_TraSach.TabIndex = 20;
-            this.button_TraSach.Text = "      Trả sách";
-            this.button_TraSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.UseVisualStyleBackColor = true;
-            this.button_TraSach.Click += new System.EventHandler(this.button_TraSach_Click);
-            // 
-            // button_MuonSach
-            // 
-            this.button_MuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_MuonSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_MuonSach.FlatAppearance.BorderSize = 0;
-            this.button_MuonSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_MuonSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_MuonSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("button_MuonSach.Image")));
-            this.button_MuonSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_MuonSach.Location = new System.Drawing.Point(0, 14);
-            this.button_MuonSach.Margin = new System.Windows.Forms.Padding(4);
-            this.button_MuonSach.Name = "button_MuonSach";
-            this.button_MuonSach.Size = new System.Drawing.Size(231, 49);
-            this.button_MuonSach.TabIndex = 11;
-            this.button_MuonSach.Text = "      Mượn sách";
-            this.button_MuonSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_MuonSach.UseVisualStyleBackColor = true;
-            this.button_MuonSach.Click += new System.EventHandler(this.button_MuonSach_Click);
             // 
             // ff_MuonTraSach
             // 
@@ -429,7 +429,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1508, 693);
             this.Controls.Add(this.panel_SearchFunction);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ff_MuonTraSach";
             this.Text = "FormQuanLiMuonTra";
             this.Resize += new System.EventHandler(this.FormQuanLiMuonTra_Resize);

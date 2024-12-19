@@ -537,11 +537,6 @@ namespace QuanLiThuVienUeh.admin
         }
         #endregion
 
-        private void dataGridView_PhieuMuonSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void dataGridView_PhieuMuonSach_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int idSach = Convert.ToInt32(dataGridView_PhieuMuonSach.Rows[e.RowIndex].Cells["IDSach"].Value);

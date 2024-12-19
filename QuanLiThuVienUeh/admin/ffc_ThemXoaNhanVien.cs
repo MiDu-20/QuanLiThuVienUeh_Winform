@@ -177,7 +177,7 @@ namespace QuanLiThuVienUeh.admin
                         };
                         db.TaiKhoanNhanVien.Add(taiKhoanNhanVien);
                         db.SaveChanges();
-                        MessageBox.Show("Thêm nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Thêm nhân viên thành công\nEmail là: "+taiKhoanNhanVien.Email.ToString()+"\nMật khẩu là: "+taiKhoanNhanVien.MatKhau.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else { MessageBox.Show("Thêm nhân viên thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }

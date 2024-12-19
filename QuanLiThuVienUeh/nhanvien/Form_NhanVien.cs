@@ -157,13 +157,6 @@ namespace QuanLiThuVienUeh
             openChildForm(new ff_DoiMatKhau(idNhanVien, "Staff")); //Fill ChildForm vào panel cố định trong giao diện
         }
 
-        private void button_LichLamViec_Click(object sender, EventArgs e)
-        {
-            label_CurrentPage.Text = "Lịch làm việc";
-            label_CurrentFunction.Text = "> Lịch làm việc";
-            openChildForm(new ffc_NhanVienDatCa(idNhanVien)); //Fill ChildForm vào panel cố định trong giao diện
-        }
-
         private void button_QuanLiSach_Click(object sender, EventArgs e)
         {
             Timer_Start(timer_QuanLiSachTransition);
@@ -203,20 +196,6 @@ namespace QuanLiThuVienUeh
             openChildForm(new ffc_ChinhSuaDocGia());
             label_CurrentPage.Text = "Quản lí độc giả";
             label_CurrentFunction.Text = "> Quản lí độc giả > Chỉnh sửa thông tin độc giả";
-        }
-
-        private void button_ThongKe_Click(object sender, EventArgs e)
-        {
-            label_CurrentPage.Text = "Thống kê";
-            label_CurrentFunction.Text = "Thống kê";
-            openChildForm(new ff_ThongKe()); //Fill ChildForm vào panel cố định trong giao diện
-        }
-
-        private void button_ThongBao_Click(object sender, EventArgs e)
-        {
-            label_CurrentPage.Text = "Thông báo";
-            label_CurrentFunction.Text = "Thông báo";
-            openChildForm(new ff_ThongBaoStaff(idNhanVien)); //Fill ChildForm vào panel cố định trong giao diện
         }
         #endregion
     }
