@@ -60,6 +60,7 @@
             this.timer_QuanLiSachTransition = new System.Windows.Forms.Timer(this.components);
             this.timer_SidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.timer_QuanLiDocGiaTransition = new System.Windows.Forms.Timer(this.components);
+            this.button_Logout = new System.Windows.Forms.Button();
             this.panel_Sidebar.SuspendLayout();
             this.panel_ChildQuanLiDocGia.SuspendLayout();
             this.panel_ChildQuanLiSach.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             // panel_Sidebar
             // 
+            this.panel_Sidebar.Controls.Add(this.button_Logout);
             this.panel_Sidebar.Controls.Add(this.panel_ChildQuanLiDocGia);
             this.panel_Sidebar.Controls.Add(this.button_QuanLiDocGia);
             this.panel_Sidebar.Controls.Add(this.panel_ChildQuanLiSach);
@@ -475,6 +477,25 @@
             this.timer_QuanLiDocGiaTransition.Interval = 10;
             this.timer_QuanLiDocGiaTransition.Tick += new System.EventHandler(this.timer_QuanLiDocGiaTransition_Tick);
             // 
+            // button_Logout
+            // 
+            this.button_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Logout.FlatAppearance.BorderSize = 0;
+            this.button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Logout.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_Logout.Image = ((System.Drawing.Image)(resources.GetObject("button_Logout.Image")));
+            this.button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Logout.Location = new System.Drawing.Point(22, 955);
+            this.button_Logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_Logout.Name = "button_Logout";
+            this.button_Logout.Size = new System.Drawing.Size(223, 48);
+            this.button_Logout.TabIndex = 15;
+            this.button_Logout.Text = "         Log Out";
+            this.button_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Logout.UseVisualStyleBackColor = true;
+            this.button_Logout.Click += new System.EventHandler(this.button_Logout_Click);
+            // 
             // Form_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -538,5 +559,6 @@
         private System.Windows.Forms.Button button_ChinhSuaDocGia;
         private System.Windows.Forms.Button button_ThongTinDocGia;
         private System.Windows.Forms.Timer timer_QuanLiDocGiaTransition;
+        private System.Windows.Forms.Button button_Logout;
     }
 }

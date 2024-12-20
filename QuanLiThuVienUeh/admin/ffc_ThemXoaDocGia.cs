@@ -111,7 +111,7 @@ namespace QuanLiThuVienUeh.admin
             if (string.IsNullOrEmpty(Input)) return "";
             string[] textsplit = Input.Split(' ');
             string newtext = (textsplit[textsplit.Length - 1] + textsplit[0]).ToLower();
-            newtext += $".{id}@ueh.edu.vn";
+            newtext += $".{id}@st.ueh.edu.vn";
             return newtext;
         }
 

@@ -190,5 +190,12 @@ namespace QuanLiThuVienUeh
         {
             Application.Exit();
         }
+
+        private void button_Logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_Login_Main form = new Form_Login_Main();
+            form.Show();
+        }
     }
 }

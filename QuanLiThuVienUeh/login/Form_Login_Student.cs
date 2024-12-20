@@ -85,7 +85,7 @@ namespace QuanLiThuVienUeh
                     }
                     else if (db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text && r.MatKhau == hashedPassword).Count() > 0)
                     {
-                        idNguoiDung = (int)db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text && r.MatKhau == textBox_Password.Text).Select(r => r.IDNguoiDung).FirstOrDefault();
+                        idNguoiDung = (int)db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text && r.MatKhau == hashedPassword).Select(r => r.IDNguoiDung).FirstOrDefault();
                         this.Hide();
                         Form_NguoiDung admin = new Form_NguoiDung(idNguoiDung);
                         admin.Show();
@@ -112,5 +112,10 @@ namespace QuanLiThuVienUeh
             formLoginMain.Show();
         }
         #endregion
+
+        private void pictureBox_UehLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

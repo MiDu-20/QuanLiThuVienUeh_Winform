@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QLTVLQDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="QLTVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="DanhGiaSach">
     <Key>
       <PropertyRef Name="MaDanhGia" />
@@ -103,7 +103,7 @@
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="MatKhau" Type="nvarchar(max)" />
   </EntityType>
-  <EntityContainer Name="QLTVLQDModelStoreContainer">
+  <EntityContainer Name="QLTVModelStoreContainer">
     <EntitySet Name="DanhGiaSach" EntityType="Self.DanhGiaSach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MuonTraSach" EntityType="Self.MuonTraSach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />

@@ -600,6 +600,10 @@
     <None Include="Resources\book-test.jpeg" />
     <None Include="Resources\book-test-3-icon.jpg" />
     <None Include="Resources\book-test-icon.jpg" />
+    <None Include="Resources\462583546_3919454781709692_880404863298391093_n.png" />
+    <None Include="Resources\462583546_3919454781709692_880404863298391093_n1.png" />
+    <None Include="Resources\Co-so-N-1536x863.jpg" />
+    <None Include="Resources\Co-so-N-1536x8631.jpg" />
     <Content Include="QLTV.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLTV.edmx</DependentUpon>
@@ -610,10 +614,6 @@
       <DependentUpon>QLTV.edmx</DependentUpon>
       <LastGenOutput>QLTV.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\462583546_3919454781709692_880404863298391093_n.png" />
-    <None Include="Resources\462583546_3919454781709692_880404863298391093_n1.png" />
-    <None Include="Resources\Co-so-N-1536x863.jpg" />
-    <None Include="Resources\Co-so-N-1536x8631.jpg" />
     <Content Include="Resources\Left.png" />
   </ItemGroup>
   <ItemGroup>

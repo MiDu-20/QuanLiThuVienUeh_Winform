@@ -21,7 +21,6 @@ namespace QuanLiThuVienUeh.admin
         int totalRecord = 0; //Biến chứa tổng số dòng trong bảng
         int lastPageNumber = 0; //Biến thể hiện trang cuối cùng trong bảng
         List<Button> buttonChangePageList = new List<Button>(); //List chứa các button phân trang
-        int coupon; //Biến chứa coupon đổi thưởng
         #endregion
 
         public ffc_XacNhanMuonSach()
@@ -70,7 +69,6 @@ namespace QuanLiThuVienUeh.admin
                         s.HoTen,
                         s.IDSach,
                         s.TenSach,
-                        s.Coupon,
                     }).ToList();
                     AdjustRowHeight();
                     AdjustColumnWidth();
@@ -108,7 +106,6 @@ namespace QuanLiThuVienUeh.admin
                         s.HoTen,
                         s.IDSach,
                         s.TenSach,
-                        s.Coupon,
                     }).ToList<object>();
             }
             return result;
@@ -143,8 +140,7 @@ namespace QuanLiThuVienUeh.admin
                 dataGridView_PhieuMuonSach.Columns[1].Width = dataGridView_PhieuMuonSach.Width * 17 / 100;
                 dataGridView_PhieuMuonSach.Columns[2].Width = dataGridView_PhieuMuonSach.Width * 23 / 100;
                 dataGridView_PhieuMuonSach.Columns[3].Width = dataGridView_PhieuMuonSach.Width * 10 / 100;
-                dataGridView_PhieuMuonSach.Columns[4].Width = dataGridView_PhieuMuonSach.Width * 30 / 100;
-                dataGridView_PhieuMuonSach.Columns[5].Width = dataGridView_PhieuMuonSach.Width * 10 / 100;
+                dataGridView_PhieuMuonSach.Columns[4].Width = dataGridView_PhieuMuonSach.Width * 40 / 100;
             }
         }
 
@@ -157,7 +153,6 @@ namespace QuanLiThuVienUeh.admin
                 dataGridView_PhieuMuonSach.Columns[2].HeaderText = "Họ tên";
                 dataGridView_PhieuMuonSach.Columns[3].HeaderText = "ID Sách";
                 dataGridView_PhieuMuonSach.Columns[4].HeaderText = "Tên sách";
-                dataGridView_PhieuMuonSach.Columns[5].HeaderText = "Coupon";
             }
         }
 
@@ -220,10 +215,6 @@ namespace QuanLiThuVienUeh.admin
                 textBox_HoVaTenNguoiDung.Text = tk.HoTen;
                 textBox_IDSach.Text = tk.IDSach.ToString();
                 textBox_TenSach.Text = tk.TenSach;
-                if (tk.Coupon == true)
-                    checkBox_Coupon.CheckState = CheckState.Checked;
-                else if (tk.Coupon == false)
-                    checkBox_Coupon.CheckState = CheckState.Unchecked;
             }
         }
 
@@ -263,9 +254,6 @@ namespace QuanLiThuVienUeh.admin
                 using (QLTVEntities db = new QLTVEntities())
                 {
                     int selectedID = Convert.ToInt32(dataGridView_PhieuMuonSach.SelectedCells[0].OwningRow.Cells["IDPhieuMuonSach"].Value.ToString());
-                    if (db.PhieuMuonSach.Find(selectedID).Coupon == true)
-                        coupon = 7;
-                    else coupon = 0;
                     MuonTraSach muontrasach = new MuonTraSach();
                     muontrasach.IDMuonTra = Convert.ToInt32(db.MuonTraSach.Count() + 1);
                     muontrasach.IDNguoiDung = Convert.ToInt32(textBox_IDNguoiDung.Text);
@@ -273,7 +261,7 @@ namespace QuanLiThuVienUeh.admin
                     muontrasach.IDSach = Convert.ToInt32(textBox_IDSach.Text);
                     muontrasach.TenSach = textBox_TenSach.Text;
                     muontrasach.NgayMuon = dateTimePicker_NgayMuonSach.Value;
-                    muontrasach.NgayTraDuKien = dateTimePicker_NgayMuonSach.Value.AddDays(7 + coupon);
+                    muontrasach.NgayTraDuKien = dateTimePicker_NgayMuonSach.Value.AddDays(7);
                     muontrasach.SoTienPhat = 0;
                     muontrasach.TinhTrang = "Đang mượn";
                     PhieuMuonSach pms = db.PhieuMuonSach.Find(selectedID);
@@ -281,8 +269,6 @@ namespace QuanLiThuVienUeh.admin
                     db.MuonTraSach.Add(muontrasach);
                     db.SaveChanges();
                     MessageBox.Show("Xác nhận mượn sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
-                    
                 }
             }
             else { MessageBox.Show("Xác nhận mượn sách thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }

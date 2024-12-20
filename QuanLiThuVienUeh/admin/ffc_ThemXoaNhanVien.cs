@@ -99,7 +99,7 @@ namespace QuanLiThuVienUeh.admin
             "u","u","u","u","u","u","u","u","u","u","u",
             "y","y","y","y","y",};
             #endregion
-            for (int i = 0; i < arr1.Length; i++)
+            for (int i = 0; i < arr1.Length-1; i++)
             {
                 HoVaTen = HoVaTen.Replace(arr1[i], arr2[i]);
                 HoVaTen = HoVaTen.Replace(arr1[i].ToUpper(), arr2[i].ToUpper());
@@ -112,11 +112,11 @@ namespace QuanLiThuVienUeh.admin
             if (string.IsNullOrEmpty(Input)) return "";
             string[] textsplit = Input.Split(' ');
             string newtext = "";
-            for (int i = 0; i < textsplit.Length - 1; i++)
+            for (int i = 0; i < textsplit.Length; i++)
             {
                 newtext += textsplit[i];
             }
-            //string newtext = (textsplit[textsplit.Length - 1] + textsplit[0]).ToLower();
+            newtext = (textsplit[textsplit.Length - 1] + textsplit[0]).ToLower();
             newtext += "@ueh.edu.vn";
             return newtext;
         }

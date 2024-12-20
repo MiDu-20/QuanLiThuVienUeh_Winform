@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="QLTVLQDModelStoreContainer" CdmEntityContainer="QLTVEntities">
+  <EntityContainerMapping StorageEntityContainer="QLTVModelStoreContainer" CdmEntityContainer="QLTVEntities">
     <EntitySetMapping Name="DanhGiaSach">
-      <EntityTypeMapping TypeName="QLTVLQDModel.DanhGiaSach">
+      <EntityTypeMapping TypeName="QLTVModel.DanhGiaSach">
         <MappingFragment StoreEntitySet="DanhGiaSach">
           <ScalarProperty Name="MaDanhGia" ColumnName="MaDanhGia" />
           <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
@@ -13,7 +13,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MuonTraSach">
-      <EntityTypeMapping TypeName="QLTVLQDModel.MuonTraSach">
+      <EntityTypeMapping TypeName="QLTVModel.MuonTraSach">
         <MappingFragment StoreEntitySet="MuonTraSach">
           <ScalarProperty Name="IDMuonTra" ColumnName="IDMuonTra" />
           <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
@@ -29,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NguoiDung">
-      <EntityTypeMapping TypeName="QLTVLQDModel.NguoiDung">
+      <EntityTypeMapping TypeName="QLTVModel.NguoiDung">
         <MappingFragment StoreEntitySet="NguoiDung">
           <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -46,7 +46,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NhanVien">
-      <EntityTypeMapping TypeName="QLTVLQDModel.NhanVien">
+      <EntityTypeMapping TypeName="QLTVModel.NhanVien">
         <MappingFragment StoreEntitySet="NhanVien">
           <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -62,7 +62,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PhieuMuonSach">
-      <EntityTypeMapping TypeName="QLTVLQDModel.PhieuMuonSach">
+      <EntityTypeMapping TypeName="QLTVModel.PhieuMuonSach">
         <MappingFragment StoreEntitySet="PhieuMuonSach">
           <ScalarProperty Name="IDPhieuMuonSach" ColumnName="IDPhieuMuonSach" />
           <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
@@ -74,7 +74,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Sach">
-      <EntityTypeMapping TypeName="QLTVLQDModel.Sach">
+      <EntityTypeMapping TypeName="QLTVModel.Sach">
         <MappingFragment StoreEntitySet="Sach">
           <ScalarProperty Name="IDSach" ColumnName="IDSach" />
           <ScalarProperty Name="NgonNgu" ColumnName="NgonNgu" />
@@ -92,7 +92,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TaiKhoanNguoiDung">
-      <EntityTypeMapping TypeName="QLTVLQDModel.TaiKhoanNguoiDung">
+      <EntityTypeMapping TypeName="QLTVModel.TaiKhoanNguoiDung">
         <MappingFragment StoreEntitySet="TaiKhoanNguoiDung">
           <ScalarProperty Name="IDTaiKhoanNguoiDung" ColumnName="IDTaiKhoanNguoiDung" />
           <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
@@ -102,7 +102,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TaiKhoanNhanVien">
-      <EntityTypeMapping TypeName="QLTVLQDModel.TaiKhoanNhanVien">
+      <EntityTypeMapping TypeName="QLTVModel.TaiKhoanNhanVien">
         <MappingFragment StoreEntitySet="TaiKhoanNhanVien">
           <ScalarProperty Name="IDTaiKhoanNhanVien" ColumnName="IDTaiKhoanNhanVien" />
           <ScalarProperty Name="IDNhanVien" ColumnName="IDNhanVien" />
