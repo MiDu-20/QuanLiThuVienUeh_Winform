@@ -153,9 +153,6 @@
     <Compile Include="admin\ff_ThongTinSach.Designer.cs">
       <DependentUpon>ff_ThongTinSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhGiaSach.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
-    </Compile>
     <Compile Include="login\ffc_CapNhatMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +257,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="QLTV.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -391,14 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -527,57 +524,18 @@
     <None Include="Resources\user-account-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\qr-icon.png" />
     <None Include="Resources\x-24850_1280.png" />
     <None Include="Resources\wrench-green-icon.png" />
     <None Include="Resources\uehgif.gif" />
     <None Include="Resources\ueh.png" />
     <None Include="Resources\ueh.jpg" />
     <None Include="Resources\trashbox-icon.png" />
-    <None Include="Resources\tiles.png" />
-    <None Include="Resources\tetrisgif.gif" />
-    <None Include="Resources\tetris.png" />
     <None Include="Resources\show-hide-password-icon.png" />
     <None Include="Resources\send-white-icon.png" />
     <None Include="Resources\send-green-icon.png" />
     <None Include="Resources\Right.png" />
-    <None Include="Resources\QuangCao3.jpg" />
-    <None Include="Resources\QuangCao2.jpg" />
-    <None Include="Resources\QuangCao1.jpg" />
-    <None Include="Resources\Q30.png" />
-    <None Include="Resources\Q29.png" />
-    <None Include="Resources\Q28.png" />
-    <None Include="Resources\Q27.png" />
-    <None Include="Resources\Q26.png" />
-    <None Include="Resources\Q25.png" />
-    <None Include="Resources\Q24.png" />
-    <None Include="Resources\Q23.png" />
-    <None Include="Resources\Q22.png" />
-    <None Include="Resources\Q21.png" />
-    <None Include="Resources\Q20.png" />
-    <None Include="Resources\Q19.png" />
-    <None Include="Resources\Q18.png" />
-    <None Include="Resources\Q17.png" />
-    <None Include="Resources\Q16.png" />
-    <None Include="Resources\Q15.png" />
-    <None Include="Resources\Q14.png" />
-    <None Include="Resources\Q13.png" />
-    <None Include="Resources\Q12.png" />
-    <None Include="Resources\Q11.png" />
-    <None Include="Resources\Q10.png" />
-    <None Include="Resources\Q9.png" />
-    <None Include="Resources\Q8.png" />
-    <None Include="Resources\Q7.png" />
-    <None Include="Resources\Q6.png" />
-    <None Include="Resources\Q5.png" />
-    <None Include="Resources\Q4.png" />
-    <None Include="Resources\Q3.png" />
-    <None Include="Resources\Q2.png" />
-    <None Include="Resources\Q1.png" />
-    <None Include="Resources\pngegg.png" />
     <None Include="Resources\plus-orange-icon.png" />
     <None Include="Resources\PlusAddition.png" />
-    <None Include="Resources\Minesweepergif.gif" />
     <None Include="Resources\media_1042ff48ca7f6d77bde5524b0b57a191dd76ee0a0.jpeg" />
     <None Include="Resources\logo-ueh-white-icon.png" />
     <None Include="Resources\307801667_1122376888699820_2584627322346665319_n.gif" />
@@ -600,8 +558,6 @@
     <None Include="Resources\book-test.jpeg" />
     <None Include="Resources\book-test-3-icon.jpg" />
     <None Include="Resources\book-test-icon.jpg" />
-    <None Include="Resources\462583546_3919454781709692_880404863298391093_n.png" />
-    <None Include="Resources\462583546_3919454781709692_880404863298391093_n1.png" />
     <None Include="Resources\Co-so-N-1536x863.jpg" />
     <None Include="Resources\Co-so-N-1536x8631.jpg" />
     <Content Include="QLTV.Context.tt">

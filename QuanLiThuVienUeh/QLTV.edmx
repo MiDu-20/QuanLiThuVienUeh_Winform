@@ -5,16 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="QLTVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="DanhGiaSach">
-          <Key>
-            <PropertyRef Name="MaDanhGia" />
-          </Key>
-          <Property Name="MaDanhGia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IDNguoiDung" Type="int" />
-          <Property Name="IDSach" Type="int" />
-          <Property Name="DiemDanhGia" Type="int" />
-          <Property Name="NhanXet" Type="nvarchar(max)" />
-        </EntityType>
         <EntityType Name="MuonTraSach">
           <Key>
             <PropertyRef Name="IDMuonTra" />
@@ -109,7 +99,6 @@
           <Property Name="MatKhau" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="QLTVModelStoreContainer">
-          <EntitySet Name="DanhGiaSach" EntityType="Self.DanhGiaSach" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MuonTraSach" EntityType="Self.MuonTraSach" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
@@ -123,16 +112,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QLTVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="DanhGiaSach">
-          <Key>
-            <PropertyRef Name="MaDanhGia" />
-          </Key>
-          <Property Name="MaDanhGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IDNguoiDung" Type="Int32" />
-          <Property Name="IDSach" Type="Int32" />
-          <Property Name="DiemDanhGia" Type="Int32" />
-          <Property Name="NhanXet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="MuonTraSach">
           <Key>
             <PropertyRef Name="IDMuonTra" />
@@ -227,7 +206,6 @@
           <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="QLTVEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DanhGiaSach" EntityType="Self.DanhGiaSach" />
           <EntitySet Name="MuonTraSach" EntityType="Self.MuonTraSach" />
           <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" />
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" />
@@ -242,17 +220,6 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="QLTVModelStoreContainer" CdmEntityContainer="QLTVEntities">
-          <EntitySetMapping Name="DanhGiaSach">
-            <EntityTypeMapping TypeName="QLTVModel.DanhGiaSach">
-              <MappingFragment StoreEntitySet="DanhGiaSach">
-                <ScalarProperty Name="MaDanhGia" ColumnName="MaDanhGia" />
-                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
-                <ScalarProperty Name="IDSach" ColumnName="IDSach" />
-                <ScalarProperty Name="DiemDanhGia" ColumnName="DiemDanhGia" />
-                <ScalarProperty Name="NhanXet" ColumnName="NhanXet" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="MuonTraSach">
             <EntityTypeMapping TypeName="QLTVModel.MuonTraSach">
               <MappingFragment StoreEntitySet="MuonTraSach">

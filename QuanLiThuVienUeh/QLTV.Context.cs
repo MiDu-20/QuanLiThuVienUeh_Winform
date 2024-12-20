@@ -25,7 +25,6 @@ namespace QuanLiThuVienUeh
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DanhGiaSach> DanhGiaSach { get; set; }
         public virtual DbSet<MuonTraSach> MuonTraSach { get; set; }
         public virtual DbSet<NguoiDung> NguoiDung { get; set; }
         public virtual DbSet<NhanVien> NhanVien { get; set; }
