@@ -21,9 +21,6 @@ namespace QuanLiThuVienUeh.admin
         public ffc_XemThongTinDocGiaChiTiet(int idNguoiDung, string chucVu)
         {
             InitializeComponent();
-            button_Edit.Visible = false;
-            button_SaveInsert.Visible = false;
-            button_ResetInsert.Visible = false;
             this.idNguoiDung = idNguoiDung;
             LoadData(idNguoiDung);
         }
@@ -55,11 +52,6 @@ namespace QuanLiThuVienUeh.admin
                 if (avt == null) return;
                 guna2CirclePictureBox_Avatar.Image = avt;
             }
-        }
-
-        private void button_Edit_Click(object sender, EventArgs e)
-        {
-            textBox_GioiThieu.Enabled = true;
         }
 
         private void button_SaveInsert_Click(object sender, EventArgs e)

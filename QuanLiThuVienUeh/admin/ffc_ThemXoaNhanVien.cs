@@ -141,7 +141,8 @@ namespace QuanLiThuVienUeh.admin
         //Hàm insert dữ liệu
             private void AddNhanVien()
             {
-                DialogResult result = MessageBox.Show($"Bạn có chắc muốn thêm nhân viên {textBox_HoVaTenInput.Text} không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show($"Bạn có chắc muốn thêm nhân viên {textBox_HoVaTenInput.Text} không?", "Thông báo", MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     MemoryStream avatarStream = new MemoryStream();
@@ -177,7 +178,8 @@ namespace QuanLiThuVienUeh.admin
                         };
                         db.TaiKhoanNhanVien.Add(taiKhoanNhanVien);
                         db.SaveChanges();
-                        MessageBox.Show("Thêm nhân viên thành công\nEmail là: "+taiKhoanNhanVien.Email.ToString()+"\nMật khẩu là: "+taiKhoanNhanVien.MatKhau.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Thêm nhân viên thành công\nEmail là: "+taiKhoanNhanVien.Email.ToString()+"\nMật khẩu là: "+taiKhoanNhanVien.MatKhau.ToString(),
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else { MessageBox.Show("Thêm nhân viên thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }

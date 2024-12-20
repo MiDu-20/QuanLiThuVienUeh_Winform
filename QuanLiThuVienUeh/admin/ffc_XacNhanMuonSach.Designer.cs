@@ -63,7 +63,6 @@
             this.button_ChangePage1 = new System.Windows.Forms.Button();
             this.label_Next = new System.Windows.Forms.Label();
             this.button_ChangePage2 = new System.Windows.Forms.Button();
-            this.checkBox_Coupon = new System.Windows.Forms.CheckBox();
             this.panel_HoVaTenNguoiDung.SuspendLayout();
             this.panel_IDNguoiDung.SuspendLayout();
             this.panel_IDSach.SuspendLayout();
@@ -531,26 +530,12 @@
             this.button_ChangePage2.UseVisualStyleBackColor = false;
             this.button_ChangePage2.Click += new System.EventHandler(this.button_ChangePage2_Click);
             // 
-            // checkBox_Coupon
-            // 
-            this.checkBox_Coupon.AutoSize = true;
-            this.checkBox_Coupon.Enabled = false;
-            this.checkBox_Coupon.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_Coupon.Location = new System.Drawing.Point(425, 732);
-            this.checkBox_Coupon.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox_Coupon.Name = "checkBox_Coupon";
-            this.checkBox_Coupon.Size = new System.Drawing.Size(192, 36);
-            this.checkBox_Coupon.TabIndex = 47;
-            this.checkBox_Coupon.Text = "+7 Day Borow";
-            this.checkBox_Coupon.UseVisualStyleBackColor = true;
-            // 
             // ffc_XacNhanMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1244, 791);
-            this.Controls.Add(this.checkBox_Coupon);
             this.Controls.Add(this.button_ReturnLastPage);
             this.Controls.Add(this.button_ReturnFirstPage);
             this.Controls.Add(this.label_Previous);
@@ -627,6 +612,5 @@
         private System.Windows.Forms.Button button_ChangePage1;
         private System.Windows.Forms.Label label_Next;
         private System.Windows.Forms.Button button_ChangePage2;
-        private System.Windows.Forms.CheckBox checkBox_Coupon;
     }
 }

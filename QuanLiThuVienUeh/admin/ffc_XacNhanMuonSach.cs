@@ -255,6 +255,27 @@ namespace QuanLiThuVienUeh.admin
                 {
                     int selectedID = Convert.ToInt32(dataGridView_PhieuMuonSach.SelectedCells[0].OwningRow.Cells["IDPhieuMuonSach"].Value.ToString());
                     MuonTraSach muontrasach = new MuonTraSach();
+
+                    //Check số lượng trước khi cho mượn
+                    Sach sach = db.Sach.Find(Convert.ToInt32(textBox_IDSach.Text));
+                    if (sach.SoLuong == 0)
+                    {
+                        MessageBox.Show("Số lượng sách mượn đã hết \nVui lòng cập nhật thêm số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Tính số sách đang mượn
+                    int idNguoiDung = Convert.ToInt32(textBox_IDNguoiDung.Text);
+                    int soSachDangMuon = db.MuonTraSach
+                        .Where(p => p.IDNguoiDung == idNguoiDung && p.TinhTrang == "Đang mượn")
+                        .Count();
+                    //Check số lượng sách sinh viên đó đang mượn
+                    if (soSachDangMuon >= 2)
+                    {
+                        MessageBox.Show("Sinh viên này đã mượn tối đa sách! \nVui lòng trả sách cho sinh viên trước khi xác nhận mượn thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+ 
                     muontrasach.IDMuonTra = Convert.ToInt32(db.MuonTraSach.Count() + 1);
                     muontrasach.IDNguoiDung = Convert.ToInt32(textBox_IDNguoiDung.Text);
                     muontrasach.HoTen = textBox_HoVaTenNguoiDung.Text;
@@ -279,6 +300,7 @@ namespace QuanLiThuVienUeh.admin
             using (QLTVEntities db = new QLTVEntities())
             {
                 Sach sach = db.Sach.Find(idSach);
+                if (sach.SoLuong == 0) return; //Check số lượng trước khi giảm
                 sach.SoLuong--;
                 db.SaveChanges();
             }
@@ -501,7 +523,7 @@ namespace QuanLiThuVienUeh.admin
 
         private void dataGridView_PhieuMuonSach_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_PhieuMuonSach.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_PhieuMuonSach.Rows.Count)
             {
                 BindingDataSelected();
             }

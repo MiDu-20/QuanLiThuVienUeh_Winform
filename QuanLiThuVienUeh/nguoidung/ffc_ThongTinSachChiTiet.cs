@@ -72,7 +72,29 @@ namespace QuanLiThuVienUeh.nguoidung
         {
             using (QLTVEntities db = new QLTVEntities())
             {
-                if (db.MuonTraSach.Where(p => p.IDNguoiDung == idNguoiDung && p.TinhTrang == "Đang mượn").Count() < 3)
+                // Tính số sách đang mượn
+                int soSachDangMuon = db.MuonTraSach
+                    .Where(p => p.IDNguoiDung == idNguoiDung && p.TinhTrang == "Đang mượn")
+                    .Count();
+
+                if (soSachDangMuon >= 2)
+                {
+                    MessageBox.Show("Bạn đã mượn tối đa sách! \nVui lòng trả sách để mượn thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Tính số phiếu đang chờ duyệt
+                int soPhieuDangChoDuyet = db.PhieuMuonSach
+                    .Where(p => p.IDNguoiDung == idNguoiDung)
+                    .Count();
+
+                if (soPhieuDangChoDuyet >= 2)
+                {
+                    MessageBox.Show("Bạn đã tạo tối đa số phiếu mượn \nVui lòng chờ nhân viên xác nhận trước khi tạo thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (soSachDangMuon + soPhieuDangChoDuyet < 2)
                 {
                     PhieuMuonSach pms = new PhieuMuonSach();
                     pms.IDPhieuMuonSach = db.PhieuMuonSach.Max(s => s.IDPhieuMuonSach) + 1;
@@ -84,8 +106,8 @@ namespace QuanLiThuVienUeh.nguoidung
                     db.SaveChanges();
                     MessageBox.Show("Tạo phiếu mượn sách thành công \nKiểm tra phiếu mượn sách ở mục Booking", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else MessageBox.Show("Bạn đã mượn tối đa sách!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                else { MessageBox.Show("Bạn đã tạo tối đa số phiếu mượn \nVui lòng chờ nhân viên xác nhận trước khi tạo thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             }
         }
-    } 
+    }
 }

@@ -46,9 +46,6 @@
             this.label_NhanVienName = new System.Windows.Forms.Label();
             this.textBox_GioiThieu = new System.Windows.Forms.TextBox();
             this.pictureBox_UehLogoIcon = new System.Windows.Forms.PictureBox();
-            this.button_Edit = new System.Windows.Forms.Button();
-            this.button_ResetInsert = new System.Windows.Forms.Button();
-            this.button_SaveInsert = new System.Windows.Forms.Button();
             this.guna2CirclePictureBox_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogoIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox_Avatar)).BeginInit();
@@ -276,56 +273,6 @@
             this.pictureBox_UehLogoIcon.TabIndex = 23;
             this.pictureBox_UehLogoIcon.TabStop = false;
             // 
-            // button_Edit
-            // 
-            this.button_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Edit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Edit.ForeColor = System.Drawing.Color.Black;
-            this.button_Edit.Location = new System.Drawing.Point(71, 356);
-            this.button_Edit.Margin = new System.Windows.Forms.Padding(4);
-            this.button_Edit.Name = "button_Edit";
-            this.button_Edit.Size = new System.Drawing.Size(107, 50);
-            this.button_Edit.TabIndex = 44;
-            this.button_Edit.Text = "Edit";
-            this.button_Edit.UseVisualStyleBackColor = false;
-            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
-            // 
-            // button_ResetInsert
-            // 
-            this.button_ResetInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_ResetInsert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ResetInsert.FlatAppearance.BorderSize = 0;
-            this.button_ResetInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ResetInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ResetInsert.ForeColor = System.Drawing.Color.White;
-            this.button_ResetInsert.Location = new System.Drawing.Point(197, 564);
-            this.button_ResetInsert.Margin = new System.Windows.Forms.Padding(4);
-            this.button_ResetInsert.Name = "button_ResetInsert";
-            this.button_ResetInsert.Size = new System.Drawing.Size(107, 50);
-            this.button_ResetInsert.TabIndex = 43;
-            this.button_ResetInsert.Text = "Reset";
-            this.button_ResetInsert.UseVisualStyleBackColor = false;
-            this.button_ResetInsert.Click += new System.EventHandler(this.button_ResetInsert_Click);
-            // 
-            // button_SaveInsert
-            // 
-            this.button_SaveInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.button_SaveInsert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_SaveInsert.FlatAppearance.BorderSize = 0;
-            this.button_SaveInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_SaveInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_SaveInsert.ForeColor = System.Drawing.Color.White;
-            this.button_SaveInsert.Location = new System.Drawing.Point(71, 564);
-            this.button_SaveInsert.Margin = new System.Windows.Forms.Padding(4);
-            this.button_SaveInsert.Name = "button_SaveInsert";
-            this.button_SaveInsert.Size = new System.Drawing.Size(107, 50);
-            this.button_SaveInsert.TabIndex = 42;
-            this.button_SaveInsert.Text = "Save";
-            this.button_SaveInsert.UseVisualStyleBackColor = false;
-            this.button_SaveInsert.Click += new System.EventHandler(this.button_SaveInsert_Click);
-            // 
             // guna2CirclePictureBox_Avatar
             // 
             this.guna2CirclePictureBox_Avatar.ImageRotate = 0F;
@@ -345,9 +292,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1064, 667);
             this.Controls.Add(this.guna2CirclePictureBox_Avatar);
-            this.Controls.Add(this.button_Edit);
-            this.Controls.Add(this.button_ResetInsert);
-            this.Controls.Add(this.button_SaveInsert);
             this.Controls.Add(this.label_NgaySinhInfo);
             this.Controls.Add(this.label_NgaySinh);
             this.Controls.Add(this.label_ChuyenNganhInfo);
@@ -395,9 +339,6 @@
         private System.Windows.Forms.Label label_NhanVienName;
         private System.Windows.Forms.TextBox textBox_GioiThieu;
         private System.Windows.Forms.PictureBox pictureBox_UehLogoIcon;
-        private System.Windows.Forms.Button button_Edit;
-        private System.Windows.Forms.Button button_ResetInsert;
-        private System.Windows.Forms.Button button_SaveInsert;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox_Avatar;
     }
 }
