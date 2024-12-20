@@ -169,7 +169,7 @@ namespace QuanLiThuVienUeh.admin
                         string randomPassword = RandomDefaultPassword();
                     TaiKhoanNhanVien taiKhoanNhanVien = new TaiKhoanNhanVien()
                     {
-                        IDTaiKhoanNhanVien = db.TaiKhoanNguoiDung.Max(s => s.IDTaiKhoanNguoiDung) + 1,
+                        IDTaiKhoanNhanVien = db.TaiKhoanNhanVien.Max(s => s.IDTaiKhoanNhanVien) + 1,
                             IDNhanVien = nhanVien.IDNhanVien,
                             ChucVu = nhanVien.ChucVu,
                             Email = nhanVien.Email,

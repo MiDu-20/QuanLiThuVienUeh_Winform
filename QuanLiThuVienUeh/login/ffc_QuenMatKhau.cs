@@ -109,12 +109,11 @@ namespace QuanLiThuVienUeh.login
                     {
                         id = (int)db.TaiKhoanNguoiDung.Where(r => r.Email == textBox_Username.Text).Select(r => r.IDNguoiDung).FirstOrDefault();
                         this.Hide();
-                        Form_NguoiDung admin = new Form_NguoiDung(id);
-                        admin.Show();
-                    }
-                    
+                        ffc_CapNhatMatKhau user = new ffc_CapNhatMatKhau(id);
+                        user.Show();
+                    }                    
                     else
-                        MessageBox.Show("Nhập sai Tài khoản/Mật khẩu","Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        MessageBox.Show("Nhập sai Tài khoản/OTP","Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
             catch (Exception)

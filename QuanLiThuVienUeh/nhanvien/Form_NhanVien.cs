@@ -148,6 +148,12 @@ namespace QuanLiThuVienUeh
             label_CurrentPage.Text = "Thông tin nhân viên";
             label_CurrentFunction.Text = "> Tài khoản > Thông tin nhân viên";
             openChildForm(new ffc_ThongTinNhanVienChiTiet(idNhanVien)); //Fill ChildForm vào panel cố định trong giao diện
+            button_Thongtin.BackColor = Color.Gainsboro;
+            button_DoiMatKhau.BackColor = Color.White;
+            button_ThongTinSach.BackColor = Color.White;
+            button_MuonTraSach.BackColor = Color.White;
+            button_ThongTinDocGia.BackColor = Color.White;
+            button_ChinhSuaDocGia.BackColor = Color.White;
         }
 
         private void button_ChinhSuaTaiKhoan_Click(object sender, EventArgs e)
@@ -155,6 +161,12 @@ namespace QuanLiThuVienUeh
             label_CurrentPage.Text = "Thông tin nhân viên";
             label_CurrentFunction.Text = "> Tài khoản > Đổi mật khẩu";
             openChildForm(new ff_DoiMatKhau(idNhanVien, "Staff")); //Fill ChildForm vào panel cố định trong giao diện
+            button_Thongtin.BackColor = Color.White;
+            button_DoiMatKhau.BackColor = Color.Gainsboro;
+            button_ThongTinSach.BackColor = Color.White;
+            button_MuonTraSach.BackColor = Color.White;
+            button_ThongTinDocGia.BackColor = Color.White;
+            button_ChinhSuaDocGia.BackColor = Color.White;
         }
 
         private void button_QuanLiSach_Click(object sender, EventArgs e)
@@ -169,6 +181,13 @@ namespace QuanLiThuVienUeh
             label_CurrentPage.Text = "Thông tin sách";
             label_CurrentFunction.Text = "Quản lí sách > Thông tin sách";
             openChildForm(new ff_ThongTinSach()); //Fill ChildForm vào panel cố định trong giao diện
+                                                  // Thay đổi màu nền
+            button_Thongtin.BackColor = Color.White;
+            button_DoiMatKhau.BackColor = Color.White;
+            button_ThongTinSach.BackColor = Color.Gainsboro;
+            button_MuonTraSach.BackColor = Color.White;
+            button_ThongTinDocGia.BackColor = Color.White;
+            button_ChinhSuaDocGia.BackColor = Color.White;
         }
 
         private void button_MuonTraSach_Click(object sender, EventArgs e)
@@ -176,6 +195,13 @@ namespace QuanLiThuVienUeh
             label_CurrentPage.Text = "Mượn trả sách";
             label_CurrentFunction.Text = "Quản lí sách > Mượn trả sách";
             openChildForm(new ff_MuonTraSach()); //Fill ChildForm vào panel cố định trong giao diện
+                                                 // Thay đổi màu nền
+            button_Thongtin.BackColor = Color.White;
+            button_DoiMatKhau.BackColor = Color.White;
+            button_ThongTinSach.BackColor = Color.White;
+            button_MuonTraSach.BackColor = Color.Gainsboro;
+            button_ThongTinDocGia.BackColor = Color.White;
+            button_ChinhSuaDocGia.BackColor = Color.White;
         }
 
         private void button_QuanLiDocGia_Click(object sender, EventArgs e)
@@ -189,6 +215,13 @@ namespace QuanLiThuVienUeh
             openChildForm(new ff_QuanLiDocGia());
             label_CurrentPage.Text = "Quản lí độc giả";
             label_CurrentFunction.Text = "> Quản lí độc giả > Thông tin độc giả";
+            // Thay đổi màu nền
+     button_Thongtin.BackColor = Color.White;
+            button_DoiMatKhau.BackColor = Color.White;
+            button_ThongTinSach.BackColor = Color.White;
+            button_MuonTraSach.BackColor = Color.White;
+            button_ThongTinDocGia.BackColor = Color.Gainsboro;
+            button_ChinhSuaDocGia.BackColor = Color.White;
         }
 
         private void button_ChinhSuaDocGia_Click(object sender, EventArgs e)
@@ -196,6 +229,13 @@ namespace QuanLiThuVienUeh
             openChildForm(new ffc_ChinhSuaDocGia());
             label_CurrentPage.Text = "Quản lí độc giả";
             label_CurrentFunction.Text = "> Quản lí độc giả > Chỉnh sửa thông tin độc giả";
+            // Thay đổi màu nền
+            button_Thongtin.BackColor = Color.White;
+            button_DoiMatKhau.BackColor = Color.White;
+            button_ThongTinSach.BackColor = Color.White;
+            button_MuonTraSach.BackColor = Color.White;
+            button_ThongTinDocGia.BackColor = Color.White;
+            button_ChinhSuaDocGia.BackColor = Color.Gainsboro;
         }
         #endregion
     }

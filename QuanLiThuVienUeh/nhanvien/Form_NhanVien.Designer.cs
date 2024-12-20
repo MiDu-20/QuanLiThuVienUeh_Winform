@@ -82,7 +82,7 @@
             this.panel_Sidebar.Controls.Add(this.panel_LogoUeh);
             this.panel_Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.panel_Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Sidebar.Name = "panel_Sidebar";
             this.panel_Sidebar.Size = new System.Drawing.Size(289, 1014);
             this.panel_Sidebar.TabIndex = 0;
@@ -93,14 +93,14 @@
             this.panel_ChildQuanLiDocGia.Controls.Add(this.button_ThongTinDocGia);
             this.panel_ChildQuanLiDocGia.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ChildQuanLiDocGia.Location = new System.Drawing.Point(0, 555);
-            this.panel_ChildQuanLiDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_ChildQuanLiDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ChildQuanLiDocGia.Name = "panel_ChildQuanLiDocGia";
             this.panel_ChildQuanLiDocGia.Size = new System.Drawing.Size(289, 123);
             this.panel_ChildQuanLiDocGia.TabIndex = 11;
             // 
             // button_ChinhSuaDocGia
             // 
-            this.button_ChinhSuaDocGia.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_ChinhSuaDocGia.BackColor = System.Drawing.Color.White;
             this.button_ChinhSuaDocGia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_ChinhSuaDocGia.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_ChinhSuaDocGia.FlatAppearance.BorderSize = 0;
@@ -108,7 +108,7 @@
             this.button_ChinhSuaDocGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChinhSuaDocGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_ChinhSuaDocGia.Location = new System.Drawing.Point(0, 62);
-            this.button_ChinhSuaDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChinhSuaDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChinhSuaDocGia.Name = "button_ChinhSuaDocGia";
             this.button_ChinhSuaDocGia.Size = new System.Drawing.Size(289, 62);
             this.button_ChinhSuaDocGia.TabIndex = 15;
@@ -119,7 +119,7 @@
             // 
             // button_ThongTinDocGia
             // 
-            this.button_ThongTinDocGia.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_ThongTinDocGia.BackColor = System.Drawing.Color.White;
             this.button_ThongTinDocGia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_ThongTinDocGia.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_ThongTinDocGia.FlatAppearance.BorderSize = 0;
@@ -127,7 +127,7 @@
             this.button_ThongTinDocGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ThongTinDocGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_ThongTinDocGia.Location = new System.Drawing.Point(0, 0);
-            this.button_ThongTinDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ThongTinDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.button_ThongTinDocGia.Name = "button_ThongTinDocGia";
             this.button_ThongTinDocGia.Size = new System.Drawing.Size(289, 62);
             this.button_ThongTinDocGia.TabIndex = 14;
@@ -147,7 +147,7 @@
             this.button_QuanLiDocGia.Image = ((System.Drawing.Image)(resources.GetObject("button_QuanLiDocGia.Image")));
             this.button_QuanLiDocGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_QuanLiDocGia.Location = new System.Drawing.Point(0, 493);
-            this.button_QuanLiDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_QuanLiDocGia.Margin = new System.Windows.Forms.Padding(4);
             this.button_QuanLiDocGia.Name = "button_QuanLiDocGia";
             this.button_QuanLiDocGia.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button_QuanLiDocGia.Size = new System.Drawing.Size(289, 62);
@@ -163,14 +163,14 @@
             this.panel_ChildQuanLiSach.Controls.Add(this.button_ThongTinSach);
             this.panel_ChildQuanLiSach.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ChildQuanLiSach.Location = new System.Drawing.Point(0, 370);
-            this.panel_ChildQuanLiSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_ChildQuanLiSach.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ChildQuanLiSach.Name = "panel_ChildQuanLiSach";
             this.panel_ChildQuanLiSach.Size = new System.Drawing.Size(289, 123);
             this.panel_ChildQuanLiSach.TabIndex = 7;
             // 
             // button_MuonTraSach
             // 
-            this.button_MuonTraSach.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_MuonTraSach.BackColor = System.Drawing.Color.White;
             this.button_MuonTraSach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_MuonTraSach.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_MuonTraSach.FlatAppearance.BorderSize = 0;
@@ -178,7 +178,7 @@
             this.button_MuonTraSach.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_MuonTraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_MuonTraSach.Location = new System.Drawing.Point(0, 62);
-            this.button_MuonTraSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_MuonTraSach.Margin = new System.Windows.Forms.Padding(4);
             this.button_MuonTraSach.Name = "button_MuonTraSach";
             this.button_MuonTraSach.Size = new System.Drawing.Size(289, 62);
             this.button_MuonTraSach.TabIndex = 1;
@@ -189,7 +189,7 @@
             // 
             // button_ThongTinSach
             // 
-            this.button_ThongTinSach.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_ThongTinSach.BackColor = System.Drawing.Color.White;
             this.button_ThongTinSach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_ThongTinSach.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_ThongTinSach.FlatAppearance.BorderSize = 0;
@@ -197,7 +197,7 @@
             this.button_ThongTinSach.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ThongTinSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_ThongTinSach.Location = new System.Drawing.Point(0, 0);
-            this.button_ThongTinSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ThongTinSach.Margin = new System.Windows.Forms.Padding(4);
             this.button_ThongTinSach.Name = "button_ThongTinSach";
             this.button_ThongTinSach.Size = new System.Drawing.Size(289, 62);
             this.button_ThongTinSach.TabIndex = 0;
@@ -217,7 +217,7 @@
             this.button_QuanLiSach.Image = ((System.Drawing.Image)(resources.GetObject("button_QuanLiSach.Image")));
             this.button_QuanLiSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_QuanLiSach.Location = new System.Drawing.Point(0, 308);
-            this.button_QuanLiSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_QuanLiSach.Margin = new System.Windows.Forms.Padding(4);
             this.button_QuanLiSach.Name = "button_QuanLiSach";
             this.button_QuanLiSach.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button_QuanLiSach.Size = new System.Drawing.Size(289, 62);
@@ -233,14 +233,14 @@
             this.panel_ChildTaiKhoan.Controls.Add(this.button_Thongtin);
             this.panel_ChildTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ChildTaiKhoan.Location = new System.Drawing.Point(0, 185);
-            this.panel_ChildTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_ChildTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ChildTaiKhoan.Name = "panel_ChildTaiKhoan";
             this.panel_ChildTaiKhoan.Size = new System.Drawing.Size(289, 123);
             this.panel_ChildTaiKhoan.TabIndex = 6;
             // 
             // button_DoiMatKhau
             // 
-            this.button_DoiMatKhau.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_DoiMatKhau.BackColor = System.Drawing.Color.White;
             this.button_DoiMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_DoiMatKhau.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_DoiMatKhau.FlatAppearance.BorderSize = 0;
@@ -248,7 +248,7 @@
             this.button_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_DoiMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_DoiMatKhau.Location = new System.Drawing.Point(0, 62);
-            this.button_DoiMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_DoiMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.button_DoiMatKhau.Name = "button_DoiMatKhau";
             this.button_DoiMatKhau.Size = new System.Drawing.Size(289, 62);
             this.button_DoiMatKhau.TabIndex = 1;
@@ -259,7 +259,7 @@
             // 
             // button_Thongtin
             // 
-            this.button_Thongtin.BackColor = System.Drawing.Color.Gainsboro;
+            this.button_Thongtin.BackColor = System.Drawing.Color.White;
             this.button_Thongtin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Thongtin.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_Thongtin.FlatAppearance.BorderSize = 0;
@@ -267,7 +267,7 @@
             this.button_Thongtin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Thongtin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
             this.button_Thongtin.Location = new System.Drawing.Point(0, 0);
-            this.button_Thongtin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Thongtin.Margin = new System.Windows.Forms.Padding(4);
             this.button_Thongtin.Name = "button_Thongtin";
             this.button_Thongtin.Size = new System.Drawing.Size(289, 62);
             this.button_Thongtin.TabIndex = 0;
@@ -287,7 +287,7 @@
             this.button_TaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("button_TaiKhoan.Image")));
             this.button_TaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_TaiKhoan.Location = new System.Drawing.Point(0, 123);
-            this.button_TaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_TaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.button_TaiKhoan.Name = "button_TaiKhoan";
             this.button_TaiKhoan.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button_TaiKhoan.Size = new System.Drawing.Size(289, 62);
@@ -304,7 +304,7 @@
             this.panel_LogoUeh.Controls.Add(this.pictureBox_MenuIcon);
             this.panel_LogoUeh.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_LogoUeh.Location = new System.Drawing.Point(0, 0);
-            this.panel_LogoUeh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_LogoUeh.Margin = new System.Windows.Forms.Padding(4);
             this.panel_LogoUeh.Name = "panel_LogoUeh";
             this.panel_LogoUeh.Size = new System.Drawing.Size(289, 123);
             this.panel_LogoUeh.TabIndex = 1;
@@ -313,7 +313,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(37, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -341,7 +341,7 @@
             this.panel_Search.Controls.Add(this.textBox_Search);
             this.panel_Search.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Search.Location = new System.Drawing.Point(289, 0);
-            this.panel_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Search.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(1635, 62);
             this.panel_Search.TabIndex = 1;
@@ -350,7 +350,7 @@
             // 
             this.pictureBox_SearchIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_SearchIcon.Image")));
             this.pictureBox_SearchIcon.Location = new System.Drawing.Point(36, 14);
-            this.pictureBox_SearchIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox_SearchIcon.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox_SearchIcon.Name = "pictureBox_SearchIcon";
             this.pictureBox_SearchIcon.Size = new System.Drawing.Size(40, 39);
             this.pictureBox_SearchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -378,7 +378,7 @@
             this.textBox_Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Search.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Search.Location = new System.Drawing.Point(80, 18);
-            this.textBox_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Search.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Search.Name = "textBox_Search";
             this.textBox_Search.Size = new System.Drawing.Size(451, 32);
             this.textBox_Search.TabIndex = 0;
@@ -393,7 +393,7 @@
             this.panel_Info.Controls.Add(this.label_Home_CurrentFunction);
             this.panel_Info.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Info.Location = new System.Drawing.Point(289, 62);
-            this.panel_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Info.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Info.Name = "panel_Info";
             this.panel_Info.Size = new System.Drawing.Size(1635, 73);
             this.panel_Info.TabIndex = 2;
@@ -449,7 +449,7 @@
             // 
             this.panel_ChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ChildForm.Location = new System.Drawing.Point(289, 135);
-            this.panel_ChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_ChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.panel_ChildForm.Name = "panel_ChildForm";
             this.panel_ChildForm.Size = new System.Drawing.Size(1635, 879);
             this.panel_ChildForm.TabIndex = 3;
@@ -479,7 +479,7 @@
             this.Controls.Add(this.panel_Info);
             this.Controls.Add(this.panel_Search);
             this.Controls.Add(this.panel_Sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1194, 728);
             this.Name = "Form_NhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

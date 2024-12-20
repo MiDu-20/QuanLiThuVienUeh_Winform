@@ -51,10 +51,10 @@
             // 
             this.pictureBox_UehLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_UehLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_UehLogo.Image")));
-            this.pictureBox_UehLogo.Location = new System.Drawing.Point(122, 25);
-            this.pictureBox_UehLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_UehLogo.Location = new System.Drawing.Point(163, 31);
+            this.pictureBox_UehLogo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox_UehLogo.Name = "pictureBox_UehLogo";
-            this.pictureBox_UehLogo.Size = new System.Drawing.Size(153, 105);
+            this.pictureBox_UehLogo.Size = new System.Drawing.Size(204, 129);
             this.pictureBox_UehLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_UehLogo.TabIndex = 27;
             this.pictureBox_UehLogo.TabStop = false;
@@ -68,9 +68,10 @@
             this.button_SignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SignIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SignIn.ForeColor = System.Drawing.Color.White;
-            this.button_SignIn.Location = new System.Drawing.Point(66, 391);
+            this.button_SignIn.Location = new System.Drawing.Point(88, 481);
+            this.button_SignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_SignIn.Name = "button_SignIn";
-            this.button_SignIn.Size = new System.Drawing.Size(280, 38);
+            this.button_SignIn.Size = new System.Drawing.Size(373, 47);
             this.button_SignIn.TabIndex = 36;
             this.button_SignIn.Text = "Continue Login";
             this.button_SignIn.UseVisualStyleBackColor = false;
@@ -84,10 +85,10 @@
             this.panel_Password.Controls.Add(this.textBox_Password);
             this.panel_Password.Controls.Add(this.button_SHPassword);
             this.panel_Password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel_Password.Location = new System.Drawing.Point(66, 316);
-            this.panel_Password.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_Password.Location = new System.Drawing.Point(88, 389);
+            this.panel_Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Password.Name = "panel_Password";
-            this.panel_Password.Size = new System.Drawing.Size(280, 43);
+            this.panel_Password.Size = new System.Drawing.Size(373, 53);
             this.panel_Password.TabIndex = 35;
             // 
             // textBox_Password
@@ -95,9 +96,10 @@
             this.textBox_Password.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Password.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Password.Location = new System.Drawing.Point(5, 8);
+            this.textBox_Password.Location = new System.Drawing.Point(7, 10);
+            this.textBox_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Password.Name = "textBox_Password";
-            this.textBox_Password.Size = new System.Drawing.Size(223, 26);
+            this.textBox_Password.Size = new System.Drawing.Size(297, 32);
             this.textBox_Password.TabIndex = 5;
             this.textBox_Password.UseSystemPasswordChar = true;
             // 
@@ -109,10 +111,10 @@
             this.button_SHPassword.FlatAppearance.BorderSize = 0;
             this.button_SHPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SHPassword.Image = ((System.Drawing.Image)(resources.GetObject("button_SHPassword.Image")));
-            this.button_SHPassword.Location = new System.Drawing.Point(233, -1);
-            this.button_SHPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.button_SHPassword.Location = new System.Drawing.Point(311, -1);
+            this.button_SHPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_SHPassword.Name = "button_SHPassword";
-            this.button_SHPassword.Size = new System.Drawing.Size(47, 45);
+            this.button_SHPassword.Size = new System.Drawing.Size(63, 55);
             this.button_SHPassword.TabIndex = 3;
             this.button_SHPassword.UseVisualStyleBackColor = false;
             this.button_SHPassword.Click += new System.EventHandler(this.button_SHPassword_Click);
@@ -122,10 +124,9 @@
             this.label_Password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Password.AutoSize = true;
             this.label_Password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Password.Location = new System.Drawing.Point(57, 291);
-            this.label_Password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_Password.Location = new System.Drawing.Point(76, 358);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(130, 21);
+            this.label_Password.Size = new System.Drawing.Size(163, 28);
             this.label_Password.TabIndex = 32;
             this.label_Password.Text = "Update Password";
             // 
@@ -134,10 +135,9 @@
             this.label_Username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Username.AutoSize = true;
             this.label_Username.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Username.Location = new System.Drawing.Point(57, 211);
-            this.label_Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_Username.Location = new System.Drawing.Point(76, 260);
             this.label_Username.Name = "label_Username";
-            this.label_Username.Size = new System.Drawing.Size(81, 21);
+            this.label_Username.Size = new System.Drawing.Size(99, 28);
             this.label_Username.TabIndex = 33;
             this.label_Username.Text = "Username";
             // 
@@ -149,10 +149,10 @@
             this.panel_Username.Controls.Add(this.textBox_Username);
             this.panel_Username.Controls.Add(this.button_Login1);
             this.panel_Username.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel_Username.Location = new System.Drawing.Point(66, 237);
-            this.panel_Username.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_Username.Location = new System.Drawing.Point(88, 292);
+            this.panel_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Username.Name = "panel_Username";
-            this.panel_Username.Size = new System.Drawing.Size(280, 43);
+            this.panel_Username.Size = new System.Drawing.Size(373, 53);
             this.panel_Username.TabIndex = 34;
             // 
             // textBox_Username
@@ -161,9 +161,10 @@
             this.textBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Username.Enabled = false;
             this.textBox_Username.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Username.Location = new System.Drawing.Point(3, 8);
+            this.textBox_Username.Location = new System.Drawing.Point(4, 10);
+            this.textBox_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Username.Name = "textBox_Username";
-            this.textBox_Username.Size = new System.Drawing.Size(225, 26);
+            this.textBox_Username.Size = new System.Drawing.Size(300, 32);
             this.textBox_Username.TabIndex = 4;
             // 
             // button_Login1
@@ -173,10 +174,10 @@
             this.button_Login1.FlatAppearance.BorderSize = 0;
             this.button_Login1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Login1.Image = ((System.Drawing.Image)(resources.GetObject("button_Login1.Image")));
-            this.button_Login1.Location = new System.Drawing.Point(233, -1);
-            this.button_Login1.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Login1.Location = new System.Drawing.Point(311, -1);
+            this.button_Login1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Login1.Name = "button_Login1";
-            this.button_Login1.Size = new System.Drawing.Size(47, 45);
+            this.button_Login1.Size = new System.Drawing.Size(63, 55);
             this.button_Login1.TabIndex = 3;
             this.button_Login1.UseVisualStyleBackColor = false;
             // 
@@ -184,9 +185,10 @@
             // 
             this.label_XinChao.AutoSize = true;
             this.label_XinChao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_XinChao.Location = new System.Drawing.Point(80, 152);
+            this.label_XinChao.Location = new System.Drawing.Point(107, 187);
+            this.label_XinChao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_XinChao.Name = "label_XinChao";
-            this.label_XinChao.Size = new System.Drawing.Size(72, 21);
+            this.label_XinChao.Size = new System.Drawing.Size(91, 28);
             this.label_XinChao.TabIndex = 37;
             this.label_XinChao.Text = "Xin chào,";
             // 
@@ -194,28 +196,30 @@
             // 
             this.label_Ten.AutoSize = true;
             this.label_Ten.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ten.Location = new System.Drawing.Point(148, 145);
+            this.label_Ten.Location = new System.Drawing.Point(197, 178);
+            this.label_Ten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Ten.Name = "label_Ten";
-            this.label_Ten.Size = new System.Drawing.Size(198, 30);
+            this.label_Ten.Size = new System.Drawing.Size(218, 37);
             this.label_Ten.TabIndex = 38;
-            this.label_Ten.Text = "TRẦN HUY HOÀNG";
+            this.label_Ten.Text = "SƠN TÙNG MTP";
             // 
             // label_ThongBao
             // 
             this.label_ThongBao.AutoSize = true;
             this.label_ThongBao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ThongBao.Location = new System.Drawing.Point(70, 175);
+            this.label_ThongBao.Location = new System.Drawing.Point(93, 215);
+            this.label_ThongBao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_ThongBao.Name = "label_ThongBao";
-            this.label_ThongBao.Size = new System.Drawing.Size(276, 21);
+            this.label_ThongBao.Size = new System.Drawing.Size(349, 28);
             this.label_ThongBao.TabIndex = 39;
             this.label_ThongBao.Text = "Vui lòng cập nhật mật khẩu để tiếp tục";
             // 
             // ffc_CapNhatMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 468);
+            this.ClientSize = new System.Drawing.Size(547, 576);
             this.Controls.Add(this.label_ThongBao);
             this.Controls.Add(this.label_Ten);
             this.Controls.Add(this.label_XinChao);
@@ -225,6 +229,7 @@
             this.Controls.Add(this.label_Username);
             this.Controls.Add(this.panel_Username);
             this.Controls.Add(this.pictureBox_UehLogo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ffc_CapNhatMatKhau";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
