@@ -504,7 +504,7 @@ namespace QuanLiThuVienUeh.admin
 
         private void dataGridView_ChinhSuaTaiKhoan_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count)
             {
                 menuExpand = false;
                 StartTimer(timer_ChinhSuaTaiKhoanTransition); //Start Timer của CSTK

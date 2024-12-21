@@ -62,8 +62,6 @@
             this.textBox_SearchFunction = new System.Windows.Forms.TextBox();
             this.panel_ChildForm = new System.Windows.Forms.Panel();
             this.panel_Sidebar.SuspendLayout();
-            this.panel_LogoutButton.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel_Null4.SuspendLayout();
             this.panel_Null3.SuspendLayout();
             this.panel_HistoryButton.SuspendLayout();
@@ -81,6 +79,8 @@
             // 
             // panel_Sidebar
             // 
+            this.panel_Sidebar.Controls.Add(this.button_ChangePassword);
+            this.panel_Sidebar.Controls.Add(this.button_Logout);
             this.panel_Sidebar.Controls.Add(this.panel_LogoutButton);
             this.panel_Sidebar.Controls.Add(this.panel1);
             this.panel_Sidebar.Controls.Add(this.panel_SettingButton);
@@ -104,7 +104,6 @@
             // 
             // panel_LogoutButton
             // 
-            this.panel_LogoutButton.Controls.Add(this.button_Logout);
             this.panel_LogoutButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_LogoutButton.Location = new System.Drawing.Point(0, 794);
             this.panel_LogoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -121,7 +120,7 @@
             this.button_Logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.button_Logout.Image = ((System.Drawing.Image)(resources.GetObject("button_Logout.Image")));
             this.button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Logout.Location = new System.Drawing.Point(31, 2);
+            this.button_Logout.Location = new System.Drawing.Point(32, 955);
             this.button_Logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Logout.Name = "button_Logout";
             this.button_Logout.Size = new System.Drawing.Size(223, 48);
@@ -133,7 +132,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button_ChangePassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 737);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -150,7 +148,7 @@
             this.button_ChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.button_ChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("button_ChangePassword.Image")));
             this.button_ChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChangePassword.Location = new System.Drawing.Point(21, 2);
+            this.button_ChangePassword.Location = new System.Drawing.Point(32, 903);
             this.button_ChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_ChangePassword.Name = "button_ChangePassword";
             this.button_ChangePassword.Size = new System.Drawing.Size(241, 48);
@@ -518,8 +516,6 @@
             this.Text = "Form_NguoiDung";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel_Sidebar.ResumeLayout(false);
-            this.panel_LogoutButton.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel_Null4.ResumeLayout(false);
             this.panel_Null3.ResumeLayout(false);
             this.panel_HistoryButton.ResumeLayout(false);

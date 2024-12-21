@@ -118,17 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button_Logout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAATJJREFUSEtj
-        GAWDGTAyxGXqMSRkOBCNk7PloXrJBHEZ0gzxmZeB+D/JOC5zEdAERohBpIK4jFlYDSUWJ2QGQE0iEcRn
-        7gMbEJd5AWuQ4sIIy+ugJpEIEjIPgA0A0aQAmMUJWQ1QERLB8Lc4MVcUaEkHlEcni+MzjYH4GYolCVkG
-        kAQDpEkBRFuckBELVPgTophE32EDBC12aGABKpgGVwjCpGYdbACvxaD4jM88DldELsYGYHJYLY5JkwRK
-        noErIhdjAzA5nEEdGsqGUSzSPKiRQXxmGhDTMXEhg4RMC6DiV/TNTjAAiveEzF4oj04FCDYwajGxgGKL
-        B6whEJ85HckQ0nFcVgjUJBJBUo4UQ3zWdayGEsaLgSaQ2dgDgYYGJmBcQfMzkTg2TQ6qexTQGzAwAADk
-        y6/5GvRtsgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="button_ChangePassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAeZJREFUSEvt
@@ -141,6 +130,17 @@
         z8/tLd4CN2oLjy9Rr7jCI/xdB19whJxsIHefldC5YA+d4QAuVzX+631FUFbyvjkaKt+13/fjVKg73EVn
         OAQTU8qwrK6dD5WwpRY0L251KcVAMzupsgLId2Zqh+aGxpNNv+KkVn7yu6FpwuEa3Eie5BflP38XgC9o
         8s/hc8AEqQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button_Logout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAATJJREFUSEtj
+        GAWDGTAyxGXqMSRkOBCNk7PloXrJBHEZ0gzxmZeB+D/JOC5zEdAERohBpIK4jFlYDSUWJ2QGQE0iEcRn
+        7gMbEJd5AWuQ4sIIy+ugJpEIEjIPgA0A0aQAmMUJWQ1QERLB8Lc4MVcUaEkHlEcni+MzjYH4GYolCVkG
+        kAQDpEkBRFuckBELVPgTophE32EDBC12aGABKpgGVwjCpGYdbACvxaD4jM88DldELsYGYHJYLY5JkwRK
+        noErIhdjAzA5nEEdGsqGUSzSPKiRQXxmGhDTMXEhg4RMC6DiV/TNTjAAiveEzF4oj04FCDYwajGxgGKL
+        B6whEJ85HckQ0nFcVgjUJBJBUo4UQ3zWdayGEsaLgSaQ2dgDgYYGJmBcQfMzkTg2TQ6qexTQGzAwAADk
+        y6/5GvRtsgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="button_History.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

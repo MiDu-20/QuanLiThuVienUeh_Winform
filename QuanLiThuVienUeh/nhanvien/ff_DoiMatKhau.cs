@@ -185,7 +185,7 @@ namespace QuanLiThuVienUeh.nhanvien
                         {
                             if (MessageBox.Show("Bạn có chắc muốn đổi mật khẩu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                             {
-                                TaiKhoanNhanVien tk = new TaiKhoanNhanVien();
+                                TaiKhoanNguoiDung tk = new TaiKhoanNguoiDung();
                                 tk.MatKhau = newPassword;
                                 MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                             }

@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login_Main));
             this.panel_UehLogo = new System.Windows.Forms.Panel();
+            this.pictureBox_UehLogo = new System.Windows.Forms.PictureBox();
             this.panel_LoginOption = new System.Windows.Forms.Panel();
             this.panel_UehStaff = new System.Windows.Forms.Panel();
+            this.button_Login2 = new System.Windows.Forms.Button();
             this.label_UehStaff = new System.Windows.Forms.Label();
             this.panel_UehStudent = new System.Windows.Forms.Panel();
+            this.button_Login1 = new System.Windows.Forms.Button();
             this.label_UehStudent = new System.Windows.Forms.Label();
             this.pictureBox_UehLogin = new System.Windows.Forms.PictureBox();
-            this.pictureBox_UehLogo = new System.Windows.Forms.PictureBox();
-            this.button_Login2 = new System.Windows.Forms.Button();
-            this.button_Login1 = new System.Windows.Forms.Button();
             this.panel_UehLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogo)).BeginInit();
             this.panel_LoginOption.SuspendLayout();
             this.panel_UehStaff.SuspendLayout();
             this.panel_UehStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_UehLogo
@@ -56,6 +56,18 @@
             this.panel_UehLogo.Name = "panel_UehLogo";
             this.panel_UehLogo.Size = new System.Drawing.Size(1179, 244);
             this.panel_UehLogo.TabIndex = 2;
+            // 
+            // pictureBox_UehLogo
+            // 
+            this.pictureBox_UehLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox_UehLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_UehLogo.Image")));
+            this.pictureBox_UehLogo.Location = new System.Drawing.Point(907, 73);
+            this.pictureBox_UehLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_UehLogo.Name = "pictureBox_UehLogo";
+            this.pictureBox_UehLogo.Size = new System.Drawing.Size(153, 105);
+            this.pictureBox_UehLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_UehLogo.TabIndex = 1;
+            this.pictureBox_UehLogo.TabStop = false;
             // 
             // panel_LoginOption
             // 
@@ -82,6 +94,18 @@
             this.panel_UehStaff.Size = new System.Drawing.Size(373, 53);
             this.panel_UehStaff.TabIndex = 4;
             this.panel_UehStaff.Click += new System.EventHandler(this.label_UehStaff_Click);
+            // 
+            // button_Login2
+            // 
+            this.button_Login2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Login2.Image = ((System.Drawing.Image)(resources.GetObject("button_Login2.Image")));
+            this.button_Login2.Location = new System.Drawing.Point(311, -1);
+            this.button_Login2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_Login2.Name = "button_Login2";
+            this.button_Login2.Size = new System.Drawing.Size(63, 55);
+            this.button_Login2.TabIndex = 3;
+            this.button_Login2.UseVisualStyleBackColor = true;
+            this.button_Login2.Click += new System.EventHandler(this.label_UehStaff_Click);
             // 
             // label_UehStaff
             // 
@@ -110,6 +134,18 @@
             this.panel_UehStudent.TabIndex = 3;
             this.panel_UehStudent.Click += new System.EventHandler(this.label_UehStudent_Click);
             // 
+            // button_Login1
+            // 
+            this.button_Login1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Login1.Image = ((System.Drawing.Image)(resources.GetObject("button_Login1.Image")));
+            this.button_Login1.Location = new System.Drawing.Point(311, -1);
+            this.button_Login1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_Login1.Name = "button_Login1";
+            this.button_Login1.Size = new System.Drawing.Size(63, 55);
+            this.button_Login1.TabIndex = 3;
+            this.button_Login1.UseVisualStyleBackColor = true;
+            this.button_Login1.Click += new System.EventHandler(this.label_UehStudent_Click);
+            // 
             // label_UehStudent
             // 
             this.label_UehStudent.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -134,42 +170,6 @@
             this.pictureBox_UehLogin.TabIndex = 0;
             this.pictureBox_UehLogin.TabStop = false;
             // 
-            // pictureBox_UehLogo
-            // 
-            this.pictureBox_UehLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox_UehLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_UehLogo.Image")));
-            this.pictureBox_UehLogo.Location = new System.Drawing.Point(907, 73);
-            this.pictureBox_UehLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox_UehLogo.Name = "pictureBox_UehLogo";
-            this.pictureBox_UehLogo.Size = new System.Drawing.Size(153, 105);
-            this.pictureBox_UehLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_UehLogo.TabIndex = 1;
-            this.pictureBox_UehLogo.TabStop = false;
-            // 
-            // button_Login2
-            // 
-            this.button_Login2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Login2.Image = ((System.Drawing.Image)(resources.GetObject("button_Login2.Image")));
-            this.button_Login2.Location = new System.Drawing.Point(311, -1);
-            this.button_Login2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Login2.Name = "button_Login2";
-            this.button_Login2.Size = new System.Drawing.Size(63, 55);
-            this.button_Login2.TabIndex = 3;
-            this.button_Login2.UseVisualStyleBackColor = true;
-            this.button_Login2.Click += new System.EventHandler(this.label_UehStaff_Click);
-            // 
-            // button_Login1
-            // 
-            this.button_Login1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Login1.Image = ((System.Drawing.Image)(resources.GetObject("button_Login1.Image")));
-            this.button_Login1.Location = new System.Drawing.Point(311, -1);
-            this.button_Login1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Login1.Name = "button_Login1";
-            this.button_Login1.Size = new System.Drawing.Size(63, 55);
-            this.button_Login1.TabIndex = 3;
-            this.button_Login1.UseVisualStyleBackColor = true;
-            this.button_Login1.Click += new System.EventHandler(this.label_UehStudent_Click);
-            // 
             // Form_Login_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,15 +185,15 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Main";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Login_Main_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Login_Main_FormClosing);
             this.panel_UehLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogo)).EndInit();
             this.panel_LoginOption.ResumeLayout(false);
             this.panel_UehStaff.ResumeLayout(false);
             this.panel_UehStaff.PerformLayout();
             this.panel_UehStudent.ResumeLayout(false);
             this.panel_UehStudent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UehLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

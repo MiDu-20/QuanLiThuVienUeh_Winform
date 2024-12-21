@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ff_History));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,7 +40,6 @@
             this.panel_Search = new System.Windows.Forms.Panel();
             this.button_ReturnLastPage = new System.Windows.Forms.Button();
             this.button_ReturnFirstPage = new System.Windows.Forms.Button();
-            this.button_InsertDelete = new System.Windows.Forms.Button();
             this.label_Previous = new System.Windows.Forms.Label();
             this.panel_Null3 = new System.Windows.Forms.Panel();
             this.button_Search = new System.Windows.Forms.Button();
@@ -66,7 +64,7 @@
             // 
             this.panel_Null2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_Null2.Location = new System.Drawing.Point(1708, 0);
-            this.panel_Null2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null2.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null2.Name = "panel_Null2";
             this.panel_Null2.Size = new System.Drawing.Size(29, 832);
             this.panel_Null2.TabIndex = 19;
@@ -103,7 +101,7 @@
             this.textBox_SearchName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_SearchName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_SearchName.Location = new System.Drawing.Point(3, 10);
-            this.textBox_SearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_SearchName.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_SearchName.Name = "textBox_SearchName";
             this.textBox_SearchName.Size = new System.Drawing.Size(633, 27);
             this.textBox_SearchName.TabIndex = 7;
@@ -116,7 +114,7 @@
             this.panel_Search.Controls.Add(this.label_SearchName);
             this.panel_Search.Controls.Add(this.textBox_SearchName);
             this.panel_Search.Location = new System.Drawing.Point(0, 58);
-            this.panel_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Search.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(640, 48);
             this.panel_Search.TabIndex = 9;
@@ -132,7 +130,7 @@
             this.button_ReturnLastPage.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ReturnLastPage.ForeColor = System.Drawing.Color.Black;
             this.button_ReturnLastPage.Location = new System.Drawing.Point(1547, 14);
-            this.button_ReturnLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ReturnLastPage.Margin = new System.Windows.Forms.Padding(4);
             this.button_ReturnLastPage.Name = "button_ReturnLastPage";
             this.button_ReturnLastPage.Size = new System.Drawing.Size(53, 49);
             this.button_ReturnLastPage.TabIndex = 19;
@@ -151,32 +149,13 @@
             this.button_ReturnFirstPage.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ReturnFirstPage.ForeColor = System.Drawing.Color.Black;
             this.button_ReturnFirstPage.Location = new System.Drawing.Point(1233, 14);
-            this.button_ReturnFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ReturnFirstPage.Margin = new System.Windows.Forms.Padding(4);
             this.button_ReturnFirstPage.Name = "button_ReturnFirstPage";
             this.button_ReturnFirstPage.Size = new System.Drawing.Size(53, 49);
             this.button_ReturnFirstPage.TabIndex = 18;
             this.button_ReturnFirstPage.Text = "<<";
             this.button_ReturnFirstPage.UseVisualStyleBackColor = false;
             this.button_ReturnFirstPage.Click += new System.EventHandler(this.button_ReturnFirstPage_Click);
-            // 
-            // button_InsertDelete
-            // 
-            this.button_InsertDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_InsertDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_InsertDelete.FlatAppearance.BorderSize = 0;
-            this.button_InsertDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_InsertDelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_InsertDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_InsertDelete.Image = ((System.Drawing.Image)(resources.GetObject("button_InsertDelete.Image")));
-            this.button_InsertDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_InsertDelete.Location = new System.Drawing.Point(0, 14);
-            this.button_InsertDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button_InsertDelete.Name = "button_InsertDelete";
-            this.button_InsertDelete.Size = new System.Drawing.Size(231, 49);
-            this.button_InsertDelete.TabIndex = 11;
-            this.button_InsertDelete.Text = "      Insert/ Delete";
-            this.button_InsertDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_InsertDelete.UseVisualStyleBackColor = true;
             // 
             // label_Previous
             // 
@@ -198,7 +177,7 @@
             this.panel_Null3.Controls.Add(this.label_ThongTinNhanVien);
             this.panel_Null3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null3.Location = new System.Drawing.Point(0, 0);
-            this.panel_Null3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null3.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null3.Name = "panel_Null3";
             this.panel_Null3.Size = new System.Drawing.Size(1667, 127);
             this.panel_Null3.TabIndex = 0;
@@ -230,7 +209,7 @@
             this.button_ChangePage3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage3.ForeColor = System.Drawing.Color.Black;
             this.button_ChangePage3.Location = new System.Drawing.Point(1469, 14);
-            this.button_ChangePage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage3.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage3.Name = "button_ChangePage3";
             this.button_ChangePage3.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage3.TabIndex = 17;
@@ -262,7 +241,7 @@
             this.button_ChangePage2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage2.ForeColor = System.Drawing.Color.Black;
             this.button_ChangePage2.Location = new System.Drawing.Point(1392, 14);
-            this.button_ChangePage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage2.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage2.Name = "button_ChangePage2";
             this.button_ChangePage2.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage2.TabIndex = 14;
@@ -274,7 +253,7 @@
             // 
             this.panel_Null1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Null1.Location = new System.Drawing.Point(0, 0);
-            this.panel_Null1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null1.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null1.Name = "panel_Null1";
             this.panel_Null1.Size = new System.Drawing.Size(41, 832);
             this.panel_Null1.TabIndex = 18;
@@ -343,7 +322,6 @@
             // 
             this.panel_Null4.Controls.Add(this.button_ReturnLastPage);
             this.panel_Null4.Controls.Add(this.button_ReturnFirstPage);
-            this.panel_Null4.Controls.Add(this.button_InsertDelete);
             this.panel_Null4.Controls.Add(this.label_Previous);
             this.panel_Null4.Controls.Add(this.button_ChangePage3);
             this.panel_Null4.Controls.Add(this.button_ChangePage1);
@@ -351,7 +329,7 @@
             this.panel_Null4.Controls.Add(this.button_ChangePage2);
             this.panel_Null4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Null4.Location = new System.Drawing.Point(0, 757);
-            this.panel_Null4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Null4.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Null4.Name = "panel_Null4";
             this.panel_Null4.Size = new System.Drawing.Size(1667, 75);
             this.panel_Null4.TabIndex = 1;
@@ -367,7 +345,7 @@
             this.button_ChangePage1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ChangePage1.ForeColor = System.Drawing.Color.White;
             this.button_ChangePage1.Location = new System.Drawing.Point(1313, 14);
-            this.button_ChangePage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ChangePage1.Margin = new System.Windows.Forms.Padding(4);
             this.button_ChangePage1.Name = "button_ChangePage1";
             this.button_ChangePage1.Size = new System.Drawing.Size(53, 49);
             this.button_ChangePage1.TabIndex = 13;
@@ -382,7 +360,7 @@
             this.panel_Main.Controls.Add(this.panel_Null3);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(41, 0);
-            this.panel_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(1667, 832);
             this.panel_Main.TabIndex = 20;
@@ -395,7 +373,7 @@
             this.panel_SearchFunction.Controls.Add(this.panel_Null2);
             this.panel_SearchFunction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_SearchFunction.Location = new System.Drawing.Point(0, 0);
-            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_SearchFunction.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SearchFunction.Name = "panel_SearchFunction";
             this.panel_SearchFunction.Size = new System.Drawing.Size(1737, 832);
             this.panel_SearchFunction.TabIndex = 2;
@@ -407,7 +385,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1737, 832);
             this.Controls.Add(this.panel_SearchFunction);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ff_History";
             this.Text = "Form_History";
             this.Resize += new System.EventHandler(this.FormHistory_Resize);
@@ -433,7 +411,6 @@
         private System.Windows.Forms.Panel panel_Search;
         private System.Windows.Forms.Button button_ReturnLastPage;
         private System.Windows.Forms.Button button_ReturnFirstPage;
-        private System.Windows.Forms.Button button_InsertDelete;
         private System.Windows.Forms.Label label_Previous;
         private System.Windows.Forms.Panel panel_Null3;
         private System.Windows.Forms.Button button_Search;

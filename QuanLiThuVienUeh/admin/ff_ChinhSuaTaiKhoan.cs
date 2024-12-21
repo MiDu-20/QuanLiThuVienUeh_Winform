@@ -515,7 +515,7 @@ namespace QuanLiThuVienUeh.admin
 
         private void dataGridView_ChinhSuaTaiKhoan_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count)
             {
                 if (textBox_SearchName.Text != null)
                 {
@@ -538,7 +538,7 @@ namespace QuanLiThuVienUeh.admin
 
         private void dataGridView_ChinhSuaTaiKhoan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView_ChinhSuaTaiKhoan.Rows.Count)
             {
                 BindingDataSelected();
             }

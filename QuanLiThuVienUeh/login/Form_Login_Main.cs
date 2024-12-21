@@ -27,7 +27,7 @@ namespace QuanLiThuVienUeh
             this.Hide();
         }
 
-        private void Form_Login_Main_FormClosed(object sender, FormClosedEventArgs e)
+        private void Form_Login_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
